@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp
+Pawn.h
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
+C:/Users/Mathieu/CLionProjects/echec/Piece.cpp
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+Position.h
+C:/Users/Mathieu/CLionProjects/echec/Position.h
+
+C:/Users/Mathieu/CLionProjects/echec/Position.cpp
+Position.h
+C:/Users/Mathieu/CLionProjects/echec/Position.h
+
+C:/Users/Mathieu/CLionProjects/echec/Position.h
+iostream
+-
+string
+-
+
+C:/Users/Mathieu/CLionProjects/echec/main.cpp
+iostream
+-
+Position.h
+C:/Users/Mathieu/CLionProjects/echec/Position.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+Pawn.h
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+
