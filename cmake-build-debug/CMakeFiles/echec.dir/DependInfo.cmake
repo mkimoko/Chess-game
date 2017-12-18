@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Mathieu/CLionProjects/echec/Bishop.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Bishop.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Pawn.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Piece.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Piece.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Position.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Position.cpp.obj"

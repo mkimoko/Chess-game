@@ -122,6 +122,33 @@ echec/fast:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/build
 .PHONY : echec/fast
 
+Bishop.obj: Bishop.cpp.obj
+
+.PHONY : Bishop.obj
+
+# target to build an object file
+Bishop.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.obj
+.PHONY : Bishop.cpp.obj
+
+Bishop.i: Bishop.cpp.i
+
+.PHONY : Bishop.i
+
+# target to preprocess a source file
+Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.i
+.PHONY : Bishop.cpp.i
+
+Bishop.s: Bishop.cpp.s
+
+.PHONY : Bishop.s
+
+# target to generate assembly for a file
+Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.s
+.PHONY : Bishop.cpp.s
+
 Pawn.obj: Pawn.cpp.obj
 
 .PHONY : Pawn.obj
@@ -266,6 +293,9 @@ help:
 	@echo ... echec
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Bishop.obj
+	@echo ... Bishop.i
+	@echo ... Bishop.s
 	@echo ... Pawn.obj
 	@echo ... Pawn.i
 	@echo ... Pawn.s

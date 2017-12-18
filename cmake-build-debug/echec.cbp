@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Bishop.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Bishop.h">
+			<Option target="echec"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp">
 			<Option target="echec"/>
 		</Unit>
