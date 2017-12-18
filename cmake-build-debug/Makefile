@@ -230,6 +230,33 @@ Position.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Position.cpp.s
 .PHONY : Position.cpp.s
 
+Queen.obj: Queen.cpp.obj
+
+.PHONY : Queen.obj
+
+# target to build an object file
+Queen.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.obj
+.PHONY : Queen.cpp.obj
+
+Queen.i: Queen.cpp.i
+
+.PHONY : Queen.i
+
+# target to preprocess a source file
+Queen.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.i
+.PHONY : Queen.cpp.i
+
+Queen.s: Queen.cpp.s
+
+.PHONY : Queen.s
+
+# target to generate assembly for a file
+Queen.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.s
+.PHONY : Queen.cpp.s
+
 Rook.obj: Rook.cpp.obj
 
 .PHONY : Rook.obj
@@ -305,6 +332,9 @@ help:
 	@echo ... Position.obj
 	@echo ... Position.i
 	@echo ... Position.s
+	@echo ... Queen.obj
+	@echo ... Queen.i
+	@echo ... Queen.s
 	@echo ... Rook.obj
 	@echo ... Rook.i
 	@echo ... Rook.s

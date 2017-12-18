@@ -106,6 +106,12 @@
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Position.h">
 			<Option target="echec"/>
 		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Queen.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Queen.h">
+			<Option target="echec"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Rook.cpp">
 			<Option target="echec"/>
 		</Unit>

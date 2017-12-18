@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/echec.dir/Pawn.cpp.obj"
   "CMakeFiles/echec.dir/Rook.cpp.obj"
   "CMakeFiles/echec.dir/Bishop.cpp.obj"
+  "CMakeFiles/echec.dir/Queen.cpp.obj"
   "echec.pdb"
   "echec.exe"
   "echec.exe.manifest"

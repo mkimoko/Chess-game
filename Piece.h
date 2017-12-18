@@ -14,6 +14,7 @@ class Piece {
         Position  m_position;
         int m_nb_moves; // number of player's move with this piece
 
+
     public:
         //~Piece();
         Position & getPosition();

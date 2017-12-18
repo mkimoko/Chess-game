@@ -42,6 +42,18 @@ iostream
 string
 -
 
+C:/Users/Mathieu/CLionProjects/echec/Queen.cpp
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+
 C:/Users/Mathieu/CLionProjects/echec/Rook.cpp
 Rook.h
 C:/Users/Mathieu/CLionProjects/echec/Rook.h
@@ -63,4 +75,6 @@ Rook.h
 C:/Users/Mathieu/CLionProjects/echec/Rook.h
 Bishop.h
 C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
 
