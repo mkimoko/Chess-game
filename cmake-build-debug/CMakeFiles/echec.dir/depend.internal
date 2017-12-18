@@ -13,8 +13,14 @@ CMakeFiles/echec.dir/Piece.cpp.obj
 CMakeFiles/echec.dir/Position.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/Position.cpp
  C:/Users/Mathieu/CLionProjects/echec/Position.h
+CMakeFiles/echec.dir/Rook.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/Piece.h
+ C:/Users/Mathieu/CLionProjects/echec/Position.h
+ C:/Users/Mathieu/CLionProjects/echec/Rook.cpp
+ C:/Users/Mathieu/CLionProjects/echec/Rook.h
 CMakeFiles/echec.dir/main.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/Pawn.h
  C:/Users/Mathieu/CLionProjects/echec/Piece.h
  C:/Users/Mathieu/CLionProjects/echec/Position.h
+ C:/Users/Mathieu/CLionProjects/echec/Rook.h
  C:/Users/Mathieu/CLionProjects/echec/main.cpp

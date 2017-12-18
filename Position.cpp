@@ -42,7 +42,7 @@ void Position::setRow(int row){
 void Position::placement(int col, int row){
     Position::setCol(col);
     Position::setRow(row);
-    std::cout << getCol() << ":" << getRow()<<std::endl;
+   /* std::cout << getCol() << ":" << getRow()<<std::endl;*/
 
 }
 
@@ -55,7 +55,6 @@ Position Position::traduction(std::string position){
         if ( ( (int)position.at(0)-65 <= 65 || (int)position.at(0)-65 >= 72 ) && ( (int)position.at(1)-48 <= 48 || (int)position.at(1)-48 >= 56 ) )
         {
             result.placement( ( (int)position.at(0)-65 )+1, ( (int)position.at(1)-48 ) );
-            result();
         }
         else{
             std::cout << "Probleme with coordinate" << std::endl;

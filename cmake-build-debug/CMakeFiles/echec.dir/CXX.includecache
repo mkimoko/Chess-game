@@ -32,6 +32,14 @@ iostream
 string
 -
 
+C:/Users/Mathieu/CLionProjects/echec/Rook.cpp
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
 C:/Users/Mathieu/CLionProjects/echec/main.cpp
 iostream
 -
@@ -41,4 +49,6 @@ Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Piece.h
 Pawn.h
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
 

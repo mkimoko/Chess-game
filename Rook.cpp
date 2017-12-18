@@ -2,33 +2,36 @@
 // Created by Mathieu on 18/12/2017.
 //
 
-#include "Pawn.h"
+#include "Rook.h"
 
-
-Pawn::Pawn(Position position)
+Rook::Rook(Position position)
 {
     m_position = position;
     m_nb_moves = 0;
-
 }
 
-int Pawn::deplacement(Position position){
+int Rook::deplacement(Position position){
 
-    if( position.getCol() == getPosition().getCol()+1 && position.getRow() == getPosition().getRow() ) {
+    if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
 
-        m_position.placement(position.getCol(), getPosition().getRow());
-        m_nb_moves++;
-        return 1;
+        if( position.getCol() == getPosition().getCol() || position.getRow() == getPosition().getRow() ) {
+
+            m_position.placement(position.getCol(), position.getRow());
+            m_nb_moves++;
+            return 1;
+        }
     }
+
+
 
     return 0;
 
 }
 
-int Pawn::specialMove(Position position){
+int Rook::specialMove(Position position){
 
 
-    if( getNbMoves() == 0){
+   /* if( getNbMoves() == 0){
         if( position.getCol() == getPosition().getCol()+2 && position.getRow() == getPosition().getRow() ) {
 
             m_position.placement(position.getCol(), getPosition().getRow());
@@ -38,12 +41,13 @@ int Pawn::specialMove(Position position){
             return 1;
         }
 
-    }
+    }*/
+    return 0;
 }
 
-int Pawn::kill(Piece & piece){
+int Rook::kill(Piece & piece){
 
-    if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
+   /* if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
 
 
         if( piece.getPosition().getRow() == getPosition().getRow()-1){
@@ -68,7 +72,7 @@ int Pawn::kill(Piece & piece){
     }
 
     else
-        std::cout<< "Impossible"<<std::endl;
+        std::cout<< "Impossible"<<std::endl;*/
 
     return 0;
 

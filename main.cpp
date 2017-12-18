@@ -2,6 +2,7 @@
 #include "Position.h"
 #include "Piece.h"
 #include "Pawn.h"
+#include "Rook.h"
 
 int main() {
     Position position;
@@ -9,18 +10,21 @@ int main() {
 
     position = Position();
     p = Position();
-    p.placement(14,4);
-    position.placement(13,3);
+    p.placement(14,10);
+    position.placement(14,10);
 
 
 
-    Pawn mangeur = Pawn(position);
+    /*Pawn mangeur = Pawn(position);
     Pawn mangee = Pawn(p);
+    mangeur.kill(mangee);*/
 
-    mangeur.kill(mangee);
-
-    /*pion->deplacement(p);
-    p.placement(16,3);
+    Rook *tour = new Rook(position);
+    tour->getPosition()();
+    std::cout << "**********************************" << std::endl;
+    tour->deplacement(p);
+    tour->getPosition()();
+    /*p.placement(16,3);
     pion->specialMove(p);*/
 
 

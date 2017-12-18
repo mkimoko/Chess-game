@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Pawn.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Piece.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Piece.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Position.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Position.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/echec/Rook.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Rook.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/main.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
