@@ -10,16 +10,16 @@ int main() {
 
     position = Position();
     p = Position();
-    p.placement(14,10);
-    position.placement(14,10);
+    p.placement(20,10);
+    position.placement(20,11);
 
 
 
-    /*Pawn mangeur = Pawn(position);
+    Rook mangeur = Rook(position);
     Pawn mangee = Pawn(p);
-    mangeur.kill(mangee);*/
+    mangeur.kill(mangee);
 
-    Rook *tour = new Rook(position);
+    /*Rook *tour = new Rook(position);
     tour->getPosition()();
     std::cout << "**********************************" << std::endl;
     tour->deplacement(p);

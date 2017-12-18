@@ -21,15 +21,11 @@ int Rook::deplacement(Position position){
             return 1;
         }
     }
-
-
-
     return 0;
 
 }
 
 int Rook::specialMove(Position position){
-
 
    /* if( getNbMoves() == 0){
         if( position.getCol() == getPosition().getCol()+2 && position.getRow() == getPosition().getRow() ) {
@@ -47,10 +43,10 @@ int Rook::specialMove(Position position){
 
 int Rook::kill(Piece & piece){
 
-   /* if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
 
+    if( getPosition().getCol() != piece.getPosition().getCol() || getPosition().getRow() != piece.getPosition().getRow() ){
 
-        if( piece.getPosition().getRow() == getPosition().getRow()-1){
+        if( piece.getPosition().getCol() == getPosition().getCol() ){
 
 
             getPosition()();
@@ -60,7 +56,7 @@ int Rook::kill(Piece & piece){
             return 1;
         }
 
-        if( piece.getPosition().getRow() == getPosition().getRow()+1 ){
+        if( piece.getPosition().getRow() == getPosition().getRow() ){
 
             getPosition()();
             std::cout << "***********************" << std::endl;
@@ -72,7 +68,7 @@ int Rook::kill(Piece & piece){
     }
 
     else
-        std::cout<< "Impossible"<<std::endl;*/
+        std::cout<< "Impossible"<<std::endl;
 
     return 0;
 
