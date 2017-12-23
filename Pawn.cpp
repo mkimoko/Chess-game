@@ -15,62 +15,45 @@ Pawn::Pawn(Position position)
 int Pawn::deplacement(Position position){
 
     if( position.getCol() == getPosition().getCol()+1 && position.getRow() == getPosition().getRow() ) {
-
         m_position.placement(position.getCol(), getPosition().getRow());
         m_nb_moves++;
         return 1;
     }
 
     return 0;
+}
 
+
+
+int Pawn::kill(Piece & piece){
+
+    if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
+
+        if( piece.getPosition().getRow() == getPosition().getRow()-1){
+            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+            m_nb_moves++;
+            return 1;
+        }
+        if( piece.getPosition().getRow() == getPosition().getRow()+1 ){
+            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+            m_nb_moves++;
+            return 1;
+        }
+    }
+    return 0;
 }
 
 int Pawn::specialMove(Position position){
 
 
     if( getNbMoves() == 0){
-        if( position.getCol() == getPosition().getCol()+2 && position.getRow() == getPosition().getRow() ) {
+        if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+2 ) {
 
             m_position.placement(position.getCol(), getPosition().getRow());
             m_nb_moves++;
 
-            m_position();
             return 1;
         }
 
     }
-}
-
-int Pawn::kill(Piece & piece){
-
-    if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
-
-
-        if( piece.getPosition().getRow() == getPosition().getRow()-1){
-
-
-            getPosition()();
-            std::cout << "+++++++++++++++++++++++++" << std::endl;
-            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            getPosition()();
-            return 1;
-        }
-
-        if( piece.getPosition().getRow() == getPosition().getRow()+1 ){
-
-            getPosition()();
-            std::cout << "***********************" << std::endl;
-            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            getPosition()();
-            return 1;
-        }
-
-    }
-
-    else
-        std::cout<< "Impossible"<<std::endl;
-
-    return 0;
-
-
 }
