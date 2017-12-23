@@ -42,7 +42,6 @@ void Position::setRow(int row){
 void Position::placement(int col, int row){
     Position::setCol(col);
     Position::setRow(row);
-   /* std::cout << getCol() << ":" << getRow()<<std::endl;*/
 
 }
 

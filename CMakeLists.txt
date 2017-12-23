@@ -3,4 +3,4 @@ project(echec)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(echec main.cpp Position.cpp Position.h Piece.cpp Piece.h Pawn.cpp Pawn.h Rook.cpp Rook.h Bishop.cpp Bishop.h Queen.cpp Queen.h)
+add_executable(echec main.cpp Position.cpp Position.h Piece.cpp Piece.h Pawn.cpp Pawn.h Rook.cpp Rook.h Bishop.cpp Bishop.h Queen.cpp Queen.h Knight.cpp Knight.h)
