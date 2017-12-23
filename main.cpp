@@ -17,18 +17,8 @@ int main() {
     position.placement(15,15);
     p.placement(17,14);
 
-
-
-    /*Knight mangeur = Knight(position);
-    Pawn mangee = Pawn(p);
-    mangeur.kill(mangee);*/
-
-    King *king = new King(position);
-    king->deplacement(p);
-    /*reine->getBishop().getPosition()();
-    reine->getRook().getPosition()();*/
-    /*fou->deplacement(p);
-    fou->getPosition()();*/
+    King pawn = King(position);
+    pawn();
 
 
 

@@ -10,6 +10,10 @@ King::King(Position position)
     m_nb_moves = 0;
 }
 
+void King::print(){
+    std::cout << " K " << std::endl;
+}
+
 int King::deplacement(Position position){
 
     int col_decal = abs( getPosition().getCol()- position.getCol() );

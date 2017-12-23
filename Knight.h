@@ -15,6 +15,9 @@ class Knight : public Piece {
         int specialMove(Position position);
         int kill(Piece & piece);
 
+    private:
+        void print();
+
 };
 
 

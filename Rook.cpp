@@ -10,6 +10,10 @@ Rook::Rook(Position position)
     m_nb_moves = 0;
 }
 
+void Rook::print() {
+    std::cout << " r " << std::endl;
+}
+
 int Rook::deplacement(Position position){
 
     if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){

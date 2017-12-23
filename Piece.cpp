@@ -13,3 +13,6 @@ int Piece::getNbMoves(){
     return m_nb_moves;
 }
 
+void Piece::operator()(){
+    print();
+}

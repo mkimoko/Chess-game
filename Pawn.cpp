@@ -12,6 +12,10 @@ Pawn::Pawn(Position position)
 
 }
 
+void Pawn::print() {
+    std::cout << " p " << std::endl;
+}
+
 int Pawn::deplacement(Position position){
 
     if( position.getCol() == getPosition().getCol()+1 && position.getRow() == getPosition().getRow() ) {

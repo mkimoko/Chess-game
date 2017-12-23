@@ -10,6 +10,10 @@ Knight::Knight(Position position)
     m_nb_moves = 0;
 }
 
+void Knight::print(){
+    std::cout << " k " << std::endl;
+}
+
 int Knight::deplacement(Position position){
 
     int col_decal = abs( getPosition().getCol()- position.getCol() );

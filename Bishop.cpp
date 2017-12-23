@@ -10,6 +10,10 @@ Bishop::Bishop(Position position)
     m_nb_moves = 0;
 }
 
+void Bishop::print(){
+    std::cout << " b " << std::endl;
+}
+
 int Bishop::deplacement(Position position){
 
     if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
