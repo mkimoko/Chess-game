@@ -14,6 +14,7 @@ class Queen : public Piece{
     private:
         Bishop m_bishop;
         Rook m_rook;
+        void print();
 
     public:
         Queen(Position position);

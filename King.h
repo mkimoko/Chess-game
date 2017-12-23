@@ -15,6 +15,9 @@ class King : public Piece{
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);
+
+    private:
+        void print();
 };
 
 

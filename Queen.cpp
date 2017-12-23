@@ -18,6 +18,10 @@ Rook & Queen::getRook(){
     return m_rook;
 }
 
+void Queen::print() {
+    std::cout << " q " << std::endl;
+}
+
 void Queen::positionement(Position position) {
     getPosition().placement(position.getCol(), position.getRow());
     getBishop().getPosition().placement(position.getCol(), position.getRow());
