@@ -12,15 +12,26 @@ Bishop::Bishop(Position position)
 
 int Bishop::deplacement(Position position){
 
+    std::cout << "------------------Before Deplacement Bishop-------------- " << std::endl;
+    getPosition()();
+    std::cout << "----------------------------------------------------" << std::endl;
+
     if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
 
-        int col_decal = abs(getPosition().getCol()- position.getCol());
-        int row_decal = abs(getPosition().getRow()- position.getRow());
+        int col_decal = abs( getPosition().getCol()- position.getCol() );
+        int row_decal = abs( getPosition().getRow()- position.getRow() );
 
         if( col_decal == row_decal ){
 
             m_position.placement(position.getCol(), position.getRow());
+            std::cout << "--------------During Deplacement Bishop:------------- " << std::endl;
+            getPosition()();
+            std::cout << "----------------------------------------------------" << std::endl;
             m_nb_moves++;
+
+            std::cout << "------------------After Deplacement Bishop -------------- " << std::endl;
+            getPosition()();
+            std::cout << "----------------------------------------------------" << std::endl<< std::endl;
             return 1;
         }
     }

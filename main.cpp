@@ -12,17 +12,17 @@ int main() {
 
     position = Position();
     p = Position();
-    p.placement(14,18);
-    position.placement(17,15);
+    p.placement(12,14);
+    position.placement(17,18);
 
 
-
-   /* Bishop mangeur = Bishop(position);
+    //Queen *reine = new Queen(position);
+    Queen mangeur = Queen(position);
     Pawn mangee = Pawn(p);
-    mangeur.kill(mangee);*/
+    mangeur.kill(mangee);
 
-    Queen *reine = new Queen(position);
-    reine->deplacement(p);
+
+    //reine->deplacement(p);
     /*reine->getBishop().getPosition()();
     reine->getRook().getPosition()();*/
     /*fou->deplacement(p);

@@ -17,8 +17,8 @@ class Queen : public Piece{
 
     public:
         Queen(Position position);
-        Bishop getBishop();
-        Rook getRook();
+        Bishop & getBishop();
+        Rook & getRook();
 
         void positionement(Position position);
         int deplacement(Position position);

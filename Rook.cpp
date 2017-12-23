@@ -11,16 +11,24 @@ Rook::Rook(Position position)
 }
 
 int Rook::deplacement(Position position){
+    std::cout << "------------------Before Deplacement Rook -------------- " << std::endl;
+    getPosition()();
+    std::cout << "----------------------------------------------------" << std::endl;
 
     if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
-
         if( position.getCol() == getPosition().getCol() || position.getRow() == getPosition().getRow() ) {
 
             m_position.placement(position.getCol(), position.getRow());
             m_nb_moves++;
+            std::cout << "--------------During Deplacement Rook:------------- " << std::endl;
+            getPosition()();
+            std::cout << "----------------------------------------------------" << std::endl;
             return 1;
         }
     }
+    std::cout << "------------------After Deplacement Rook-------------- " << std::endl;
+    getPosition()();
+    std::cout << "----------------------------------------------------" << std::endl<< std::endl;
     return 0;
 
 }
