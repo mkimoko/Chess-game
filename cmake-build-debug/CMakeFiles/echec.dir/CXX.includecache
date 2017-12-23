@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Mathieu/CLionProjects/echec/Bishop.cpp
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+cstdlib
+-
+
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
+C:/Users/Mathieu/CLionProjects/echec/King.cpp
+King.h
+C:/Users/Mathieu/CLionProjects/echec/King.h
+
+C:/Users/Mathieu/CLionProjects/echec/King.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
+C:/Users/Mathieu/CLionProjects/echec/Knight.cpp
+Knight.h
+C:/Users/Mathieu/CLionProjects/echec/Knight.h
+
+C:/Users/Mathieu/CLionProjects/echec/Knight.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
 C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp
 Pawn.h
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
@@ -32,6 +58,26 @@ iostream
 string
 -
 
+C:/Users/Mathieu/CLionProjects/echec/Queen.cpp
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+
+C:/Users/Mathieu/CLionProjects/echec/Rook.cpp
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
 C:/Users/Mathieu/CLionProjects/echec/main.cpp
 iostream
 -
@@ -41,4 +87,14 @@ Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Piece.h
 Pawn.h
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+Knight.h
+C:/Users/Mathieu/CLionProjects/echec/Knight.h
+King.h
+C:/Users/Mathieu/CLionProjects/echec/King.h
 

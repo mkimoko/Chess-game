@@ -82,6 +82,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Bishop.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Bishop.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/King.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/King.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Knight.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Knight.h">
+			<Option target="echec"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp">
 			<Option target="echec"/>
 		</Unit>
@@ -98,6 +116,18 @@
 			<Option target="echec"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Position.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Queen.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Queen.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Rook.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Rook.h">
 			<Option target="echec"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/main.cpp">

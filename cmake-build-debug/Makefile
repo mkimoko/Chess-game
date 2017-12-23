@@ -122,6 +122,87 @@ echec/fast:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/build
 .PHONY : echec/fast
 
+Bishop.obj: Bishop.cpp.obj
+
+.PHONY : Bishop.obj
+
+# target to build an object file
+Bishop.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.obj
+.PHONY : Bishop.cpp.obj
+
+Bishop.i: Bishop.cpp.i
+
+.PHONY : Bishop.i
+
+# target to preprocess a source file
+Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.i
+.PHONY : Bishop.cpp.i
+
+Bishop.s: Bishop.cpp.s
+
+.PHONY : Bishop.s
+
+# target to generate assembly for a file
+Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.s
+.PHONY : Bishop.cpp.s
+
+King.obj: King.cpp.obj
+
+.PHONY : King.obj
+
+# target to build an object file
+King.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.obj
+.PHONY : King.cpp.obj
+
+King.i: King.cpp.i
+
+.PHONY : King.i
+
+# target to preprocess a source file
+King.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.i
+.PHONY : King.cpp.i
+
+King.s: King.cpp.s
+
+.PHONY : King.s
+
+# target to generate assembly for a file
+King.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.s
+.PHONY : King.cpp.s
+
+Knight.obj: Knight.cpp.obj
+
+.PHONY : Knight.obj
+
+# target to build an object file
+Knight.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.obj
+.PHONY : Knight.cpp.obj
+
+Knight.i: Knight.cpp.i
+
+.PHONY : Knight.i
+
+# target to preprocess a source file
+Knight.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.i
+.PHONY : Knight.cpp.i
+
+Knight.s: Knight.cpp.s
+
+.PHONY : Knight.s
+
+# target to generate assembly for a file
+Knight.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.s
+.PHONY : Knight.cpp.s
+
 Pawn.obj: Pawn.cpp.obj
 
 .PHONY : Pawn.obj
@@ -203,6 +284,60 @@ Position.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Position.cpp.s
 .PHONY : Position.cpp.s
 
+Queen.obj: Queen.cpp.obj
+
+.PHONY : Queen.obj
+
+# target to build an object file
+Queen.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.obj
+.PHONY : Queen.cpp.obj
+
+Queen.i: Queen.cpp.i
+
+.PHONY : Queen.i
+
+# target to preprocess a source file
+Queen.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.i
+.PHONY : Queen.cpp.i
+
+Queen.s: Queen.cpp.s
+
+.PHONY : Queen.s
+
+# target to generate assembly for a file
+Queen.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.s
+.PHONY : Queen.cpp.s
+
+Rook.obj: Rook.cpp.obj
+
+.PHONY : Rook.obj
+
+# target to build an object file
+Rook.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.obj
+.PHONY : Rook.cpp.obj
+
+Rook.i: Rook.cpp.i
+
+.PHONY : Rook.i
+
+# target to preprocess a source file
+Rook.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.i
+.PHONY : Rook.cpp.i
+
+Rook.s: Rook.cpp.s
+
+.PHONY : Rook.s
+
+# target to generate assembly for a file
+Rook.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.s
+.PHONY : Rook.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -239,6 +374,15 @@ help:
 	@echo ... echec
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Bishop.obj
+	@echo ... Bishop.i
+	@echo ... Bishop.s
+	@echo ... King.obj
+	@echo ... King.i
+	@echo ... King.s
+	@echo ... Knight.obj
+	@echo ... Knight.i
+	@echo ... Knight.s
 	@echo ... Pawn.obj
 	@echo ... Pawn.i
 	@echo ... Pawn.s
@@ -248,6 +392,12 @@ help:
 	@echo ... Position.obj
 	@echo ... Position.i
 	@echo ... Position.s
+	@echo ... Queen.obj
+	@echo ... Queen.i
+	@echo ... Queen.s
+	@echo ... Rook.obj
+	@echo ... Rook.i
+	@echo ... Rook.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

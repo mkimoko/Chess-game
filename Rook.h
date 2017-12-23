@@ -1,20 +1,19 @@
 //
 // Created by Mathieu on 18/12/2017.
 //
+
+#ifndef ECHEC_ROOK_H
+#define ECHEC_ROOK_H
+
 #include "Piece.h"
 
-#ifndef ECHEC_PAWN_H
-#define ECHEC_PAWN_H
-
-
-class Pawn : public Piece{
-
+class Rook : public Piece{
     public:
-        Pawn(Position position);
+        Rook(Position position);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);
 };
 
 
-#endif //ECHEC_PAWN_H
+#endif //ECHEC_ROOK_H

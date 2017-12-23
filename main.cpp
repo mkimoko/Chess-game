@@ -2,6 +2,11 @@
 #include "Position.h"
 #include "Piece.h"
 #include "Pawn.h"
+#include "Rook.h"
+#include "Bishop.h"
+#include "Queen.h"
+#include "Knight.h"
+#include "King.h"
 
 int main() {
     Position position;
@@ -9,19 +14,23 @@ int main() {
 
     position = Position();
     p = Position();
-    p.placement(14,4);
-    position.placement(13,3);
+    position.placement(15,15);
+    p.placement(17,14);
 
 
 
-    Pawn mangeur = Pawn(position);
+    /*Knight mangeur = Knight(position);
     Pawn mangee = Pawn(p);
+    mangeur.kill(mangee);*/
 
-    mangeur.kill(mangee);
+    King *king = new King(position);
+    king->deplacement(p);
+    /*reine->getBishop().getPosition()();
+    reine->getRook().getPosition()();*/
+    /*fou->deplacement(p);
+    fou->getPosition()();*/
 
-    /*pion->deplacement(p);
-    p.placement(16,3);
-    pion->specialMove(p);*/
+
 
 
     return 0;

@@ -1,20 +1,20 @@
 //
 // Created by Mathieu on 18/12/2017.
 //
+
+#ifndef ECHEC_BISHOP_H
+#define ECHEC_BISHOP_H
+
 #include "Piece.h"
 
-#ifndef ECHEC_PAWN_H
-#define ECHEC_PAWN_H
-
-
-class Pawn : public Piece{
-
+class Bishop : public Piece {
     public:
-        Pawn(Position position);
+        Bishop(Position position);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);
+
 };
 
 
-#endif //ECHEC_PAWN_H
+#endif //ECHEC_BISHOP_H

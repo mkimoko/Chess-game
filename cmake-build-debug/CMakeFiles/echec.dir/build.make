@@ -152,12 +152,137 @@ CMakeFiles/echec.dir/Pawn.cpp.obj.provides: CMakeFiles/echec.dir/Pawn.cpp.obj.re
 CMakeFiles/echec.dir/Pawn.cpp.obj.provides.build: CMakeFiles/echec.dir/Pawn.cpp.obj
 
 
+CMakeFiles/echec.dir/Rook.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Rook.cpp.obj: ../Rook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/echec.dir/Rook.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Rook.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Rook.cpp
+
+CMakeFiles/echec.dir/Rook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Rook.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Rook.cpp > CMakeFiles\echec.dir\Rook.cpp.i
+
+CMakeFiles/echec.dir/Rook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Rook.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Rook.cpp -o CMakeFiles\echec.dir\Rook.cpp.s
+
+CMakeFiles/echec.dir/Rook.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Rook.cpp.obj.requires
+
+CMakeFiles/echec.dir/Rook.cpp.obj.provides: CMakeFiles/echec.dir/Rook.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Rook.cpp.obj.provides
+
+CMakeFiles/echec.dir/Rook.cpp.obj.provides.build: CMakeFiles/echec.dir/Rook.cpp.obj
+
+
+CMakeFiles/echec.dir/Bishop.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Bishop.cpp.obj: ../Bishop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/echec.dir/Bishop.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Bishop.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Bishop.cpp
+
+CMakeFiles/echec.dir/Bishop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Bishop.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Bishop.cpp > CMakeFiles\echec.dir\Bishop.cpp.i
+
+CMakeFiles/echec.dir/Bishop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Bishop.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Bishop.cpp -o CMakeFiles\echec.dir\Bishop.cpp.s
+
+CMakeFiles/echec.dir/Bishop.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Bishop.cpp.obj.requires
+
+CMakeFiles/echec.dir/Bishop.cpp.obj.provides: CMakeFiles/echec.dir/Bishop.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Bishop.cpp.obj.provides
+
+CMakeFiles/echec.dir/Bishop.cpp.obj.provides.build: CMakeFiles/echec.dir/Bishop.cpp.obj
+
+
+CMakeFiles/echec.dir/Queen.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Queen.cpp.obj: ../Queen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/echec.dir/Queen.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Queen.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Queen.cpp
+
+CMakeFiles/echec.dir/Queen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Queen.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Queen.cpp > CMakeFiles\echec.dir\Queen.cpp.i
+
+CMakeFiles/echec.dir/Queen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Queen.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Queen.cpp -o CMakeFiles\echec.dir\Queen.cpp.s
+
+CMakeFiles/echec.dir/Queen.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Queen.cpp.obj.requires
+
+CMakeFiles/echec.dir/Queen.cpp.obj.provides: CMakeFiles/echec.dir/Queen.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Queen.cpp.obj.provides
+
+CMakeFiles/echec.dir/Queen.cpp.obj.provides.build: CMakeFiles/echec.dir/Queen.cpp.obj
+
+
+CMakeFiles/echec.dir/Knight.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Knight.cpp.obj: ../Knight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/echec.dir/Knight.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Knight.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Knight.cpp
+
+CMakeFiles/echec.dir/Knight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Knight.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Knight.cpp > CMakeFiles\echec.dir\Knight.cpp.i
+
+CMakeFiles/echec.dir/Knight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Knight.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Knight.cpp -o CMakeFiles\echec.dir\Knight.cpp.s
+
+CMakeFiles/echec.dir/Knight.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Knight.cpp.obj.requires
+
+CMakeFiles/echec.dir/Knight.cpp.obj.provides: CMakeFiles/echec.dir/Knight.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Knight.cpp.obj.provides
+
+CMakeFiles/echec.dir/Knight.cpp.obj.provides.build: CMakeFiles/echec.dir/Knight.cpp.obj
+
+
+CMakeFiles/echec.dir/King.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/King.cpp.obj: ../King.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/echec.dir/King.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\King.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\King.cpp
+
+CMakeFiles/echec.dir/King.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/King.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\King.cpp > CMakeFiles\echec.dir\King.cpp.i
+
+CMakeFiles/echec.dir/King.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/King.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\King.cpp -o CMakeFiles\echec.dir\King.cpp.s
+
+CMakeFiles/echec.dir/King.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/King.cpp.obj.requires
+
+CMakeFiles/echec.dir/King.cpp.obj.provides: CMakeFiles/echec.dir/King.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/King.cpp.obj.provides
+
+CMakeFiles/echec.dir/King.cpp.obj.provides.build: CMakeFiles/echec.dir/King.cpp.obj
+
+
 # Object files for target echec
 echec_OBJECTS = \
 "CMakeFiles/echec.dir/main.cpp.obj" \
 "CMakeFiles/echec.dir/Position.cpp.obj" \
 "CMakeFiles/echec.dir/Piece.cpp.obj" \
-"CMakeFiles/echec.dir/Pawn.cpp.obj"
+"CMakeFiles/echec.dir/Pawn.cpp.obj" \
+"CMakeFiles/echec.dir/Rook.cpp.obj" \
+"CMakeFiles/echec.dir/Bishop.cpp.obj" \
+"CMakeFiles/echec.dir/Queen.cpp.obj" \
+"CMakeFiles/echec.dir/Knight.cpp.obj" \
+"CMakeFiles/echec.dir/King.cpp.obj"
 
 # External object files for target echec
 echec_EXTERNAL_OBJECTS =
@@ -166,11 +291,16 @@ echec.exe: CMakeFiles/echec.dir/main.cpp.obj
 echec.exe: CMakeFiles/echec.dir/Position.cpp.obj
 echec.exe: CMakeFiles/echec.dir/Piece.cpp.obj
 echec.exe: CMakeFiles/echec.dir/Pawn.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Rook.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Bishop.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Queen.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Knight.cpp.obj
+echec.exe: CMakeFiles/echec.dir/King.cpp.obj
 echec.exe: CMakeFiles/echec.dir/build.make
 echec.exe: CMakeFiles/echec.dir/linklibs.rsp
 echec.exe: CMakeFiles/echec.dir/objects1.rsp
 echec.exe: CMakeFiles/echec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable echec.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable echec.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\echec.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -182,6 +312,11 @@ CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/main.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Position.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Piece.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Pawn.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Rook.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Bishop.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Queen.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Knight.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/King.cpp.obj.requires
 
 .PHONY : CMakeFiles/echec.dir/requires
 
