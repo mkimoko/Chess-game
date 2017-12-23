@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Mathieu/CLionProjects/echec/Knight.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Knight.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Pawn.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Piece.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Piece.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/echec/Player.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Player.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Position.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Position.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Queen.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Queen.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/echec/Rook.cpp" "C:/Users/Mathieu/CLionProjects/echec/cmake-build-debug/CMakeFiles/echec.dir/Rook.cpp.obj"

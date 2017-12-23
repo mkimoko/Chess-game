@@ -21,6 +21,22 @@ void Position::operator()()
     std::cout << getCol() << ":" << getRow()<<std::endl;
 }
 
+bool Position::operator==(Position position) {
+
+    if(m_col == position.getCol() && m_row == position.getRow())
+        return true;
+
+    return false;
+}
+
+bool Position::operator!=(Position position) {
+
+    if(m_col == position.getCol() && m_row == position.getRow())
+        return false;
+
+    return true;
+}
+
 //Getter
 int Position::getRow(){
     return m_row;

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/echec.dir/Queen.cpp.obj"
   "CMakeFiles/echec.dir/Knight.cpp.obj"
   "CMakeFiles/echec.dir/King.cpp.obj"
+  "CMakeFiles/echec.dir/Player.cpp.obj"
   "echec.pdb"
   "echec.exe"
   "echec.exe.manifest"

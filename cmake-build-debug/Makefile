@@ -257,6 +257,33 @@ Piece.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Piece.cpp.s
 .PHONY : Piece.cpp.s
 
+Player.obj: Player.cpp.obj
+
+.PHONY : Player.obj
+
+# target to build an object file
+Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.obj
+.PHONY : Player.cpp.obj
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 Position.obj: Position.cpp.obj
 
 .PHONY : Position.obj
@@ -389,6 +416,9 @@ help:
 	@echo ... Piece.obj
 	@echo ... Piece.i
 	@echo ... Piece.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
 	@echo ... Position.obj
 	@echo ... Position.i
 	@echo ... Position.s

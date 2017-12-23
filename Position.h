@@ -43,6 +43,10 @@ class Position {
         //Print the position
         void operator()();
 
+        //Compare position
+        bool operator==(Position position);
+        bool operator!=(Position position);
+
 };
 
 
