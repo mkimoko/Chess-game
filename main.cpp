@@ -6,6 +6,7 @@
 #include "Bishop.h"
 #include "Queen.h"
 #include "Knight.h"
+#include "King.h"
 
 int main() {
     Position position;
@@ -18,12 +19,12 @@ int main() {
 
 
 
-    Knight mangeur = Knight(position);
+    /*Knight mangeur = Knight(position);
     Pawn mangee = Pawn(p);
-    mangeur.kill(mangee);
+    mangeur.kill(mangee);*/
 
-    /*Knight *knight = new Knight(position);
-    knight->deplacement(p);*/
+    King *king = new King(position);
+    king->deplacement(p);
     /*reine->getBishop().getPosition()();
     reine->getRook().getPosition()();*/
     /*fou->deplacement(p);

@@ -6,6 +6,11 @@ CMakeFiles/echec.dir/Bishop.cpp.obj: ../Bishop.h
 CMakeFiles/echec.dir/Bishop.cpp.obj: ../Piece.h
 CMakeFiles/echec.dir/Bishop.cpp.obj: ../Position.h
 
+CMakeFiles/echec.dir/King.cpp.obj: ../King.cpp
+CMakeFiles/echec.dir/King.cpp.obj: ../King.h
+CMakeFiles/echec.dir/King.cpp.obj: ../Piece.h
+CMakeFiles/echec.dir/King.cpp.obj: ../Position.h
+
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Knight.cpp
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Knight.h
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Piece.h
@@ -36,6 +41,7 @@ CMakeFiles/echec.dir/Rook.cpp.obj: ../Rook.cpp
 CMakeFiles/echec.dir/Rook.cpp.obj: ../Rook.h
 
 CMakeFiles/echec.dir/main.cpp.obj: ../Bishop.h
+CMakeFiles/echec.dir/main.cpp.obj: ../King.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Knight.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Pawn.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Piece.h
