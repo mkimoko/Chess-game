@@ -10,6 +10,11 @@ Queen::Queen(Position position):m_bishop(position), m_rook(position)
     m_nb_moves = 0;
 }
 
+Queen::Queen(int col, int row) :m_bishop(col, row), m_rook(col, row){
+    m_position = Position(col, row);
+    m_nb_moves = 0;
+}
+
 Bishop & Queen::getBishop(){
     return m_bishop;
 }

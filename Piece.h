@@ -10,13 +10,11 @@
 class Piece {
 
     protected:
-
         Position  m_position;
         int m_nb_moves; // number of player's move with this piece
         virtual void print() = 0;
 
     public:
-        //~Piece();
         Position & getPosition();
         int getNbMoves();
         virtual int deplacement(Position position) = 0;
@@ -24,6 +22,7 @@ class Piece {
         virtual int kill(Piece & piece) = 0;
         //Print the piece
         void operator()();
+        bool operator<(Piece * piece);
 
 
 };

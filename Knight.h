@@ -11,6 +11,7 @@
 class Knight : public Piece {
     public:
         Knight(Position position);
+        Knight(int col, int row);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);

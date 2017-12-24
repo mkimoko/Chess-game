@@ -10,6 +10,11 @@ Knight::Knight(Position position)
     m_nb_moves = 0;
 }
 
+Knight::Knight(int col, int row) {
+    m_position = Position(col, row);
+    m_nb_moves = 0;
+}
+
 void Knight::print(){
     std::cout << " k " << std::endl;
 }

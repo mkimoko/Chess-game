@@ -10,6 +10,11 @@ Bishop::Bishop(Position position)
     m_nb_moves = 0;
 }
 
+Bishop::Bishop(int col, int row) {
+    m_position = Position(col, row);
+    m_nb_moves = 0;
+}
+
 void Bishop::print(){
     std::cout << " b " << std::endl;
 }

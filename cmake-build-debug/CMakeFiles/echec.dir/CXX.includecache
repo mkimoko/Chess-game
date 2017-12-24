@@ -48,6 +48,20 @@ C:/Users/Mathieu/CLionProjects/echec/Piece.h
 Position.h
 C:/Users/Mathieu/CLionProjects/echec/Position.h
 
+C:/Users/Mathieu/CLionProjects/echec/Player.cpp
+Player.h
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+algorithm
+-
+
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+vector
+-
+map
+-
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
+
 C:/Users/Mathieu/CLionProjects/echec/Position.cpp
 Position.h
 C:/Users/Mathieu/CLionProjects/echec/Position.h
@@ -81,6 +95,8 @@ C:/Users/Mathieu/CLionProjects/echec/Piece.h
 C:/Users/Mathieu/CLionProjects/echec/main.cpp
 iostream
 -
+map
+-
 Position.h
 C:/Users/Mathieu/CLionProjects/echec/Position.h
 Piece.h
@@ -97,4 +113,6 @@ Knight.h
 C:/Users/Mathieu/CLionProjects/echec/Knight.h
 King.h
 C:/Users/Mathieu/CLionProjects/echec/King.h
+Player.h
+C:/Users/Mathieu/CLionProjects/echec/Player.h
 

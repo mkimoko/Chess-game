@@ -17,6 +17,7 @@ class Position {
     public:
         //Construct - Destruct
         Position();
+        Position(int col, int row);
         ~Position();
 
 
