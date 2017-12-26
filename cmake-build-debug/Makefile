@@ -176,6 +176,60 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Check.obj: Check.cpp.obj
+
+.PHONY : Check.obj
+
+# target to build an object file
+Check.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check.cpp.obj
+.PHONY : Check.cpp.obj
+
+Check.i: Check.cpp.i
+
+.PHONY : Check.i
+
+# target to preprocess a source file
+Check.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check.cpp.i
+.PHONY : Check.cpp.i
+
+Check.s: Check.cpp.s
+
+.PHONY : Check.s
+
+# target to generate assembly for a file
+Check.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check.cpp.s
+.PHONY : Check.cpp.s
+
+Check_Mate.obj: Check_Mate.cpp.obj
+
+.PHONY : Check_Mate.obj
+
+# target to build an object file
+Check_Mate.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check_Mate.cpp.obj
+.PHONY : Check_Mate.cpp.obj
+
+Check_Mate.i: Check_Mate.cpp.i
+
+.PHONY : Check_Mate.i
+
+# target to preprocess a source file
+Check_Mate.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check_Mate.cpp.i
+.PHONY : Check_Mate.cpp.i
+
+Check_Mate.s: Check_Mate.cpp.s
+
+.PHONY : Check_Mate.s
+
+# target to generate assembly for a file
+Check_Mate.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check_Mate.cpp.s
+.PHONY : Check_Mate.cpp.s
+
 King.obj: King.cpp.obj
 
 .PHONY : King.obj
@@ -229,6 +283,87 @@ Knight.s: Knight.cpp.s
 Knight.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.s
 .PHONY : Knight.cpp.s
+
+No_Piece.obj: No_Piece.cpp.obj
+
+.PHONY : No_Piece.obj
+
+# target to build an object file
+No_Piece.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/No_Piece.cpp.obj
+.PHONY : No_Piece.cpp.obj
+
+No_Piece.i: No_Piece.cpp.i
+
+.PHONY : No_Piece.i
+
+# target to preprocess a source file
+No_Piece.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/No_Piece.cpp.i
+.PHONY : No_Piece.cpp.i
+
+No_Piece.s: No_Piece.cpp.s
+
+.PHONY : No_Piece.s
+
+# target to generate assembly for a file
+No_Piece.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/No_Piece.cpp.s
+.PHONY : No_Piece.cpp.s
+
+Obstruction.obj: Obstruction.cpp.obj
+
+.PHONY : Obstruction.obj
+
+# target to build an object file
+Obstruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Obstruction.cpp.obj
+.PHONY : Obstruction.cpp.obj
+
+Obstruction.i: Obstruction.cpp.i
+
+.PHONY : Obstruction.i
+
+# target to preprocess a source file
+Obstruction.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Obstruction.cpp.i
+.PHONY : Obstruction.cpp.i
+
+Obstruction.s: Obstruction.cpp.s
+
+.PHONY : Obstruction.s
+
+# target to generate assembly for a file
+Obstruction.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Obstruction.cpp.s
+.PHONY : Obstruction.cpp.s
+
+Out_of_Board.obj: Out_of_Board.cpp.obj
+
+.PHONY : Out_of_Board.obj
+
+# target to build an object file
+Out_of_Board.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Out_of_Board.cpp.obj
+.PHONY : Out_of_Board.cpp.obj
+
+Out_of_Board.i: Out_of_Board.cpp.i
+
+.PHONY : Out_of_Board.i
+
+# target to preprocess a source file
+Out_of_Board.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Out_of_Board.cpp.i
+.PHONY : Out_of_Board.cpp.i
+
+Out_of_Board.s: Out_of_Board.cpp.s
+
+.PHONY : Out_of_Board.s
+
+# target to generate assembly for a file
+Out_of_Board.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Out_of_Board.cpp.s
+.PHONY : Out_of_Board.cpp.s
 
 Pawn.obj: Pawn.cpp.obj
 
@@ -434,12 +569,27 @@ help:
 	@echo ... Board.obj
 	@echo ... Board.i
 	@echo ... Board.s
+	@echo ... Check.obj
+	@echo ... Check.i
+	@echo ... Check.s
+	@echo ... Check_Mate.obj
+	@echo ... Check_Mate.i
+	@echo ... Check_Mate.s
 	@echo ... King.obj
 	@echo ... King.i
 	@echo ... King.s
 	@echo ... Knight.obj
 	@echo ... Knight.i
 	@echo ... Knight.s
+	@echo ... No_Piece.obj
+	@echo ... No_Piece.i
+	@echo ... No_Piece.s
+	@echo ... Obstruction.obj
+	@echo ... Obstruction.i
+	@echo ... Obstruction.s
+	@echo ... Out_of_Board.obj
+	@echo ... Out_of_Board.i
+	@echo ... Out_of_Board.s
 	@echo ... Pawn.obj
 	@echo ... Pawn.i
 	@echo ... Pawn.s

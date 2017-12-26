@@ -320,6 +320,126 @@ CMakeFiles/echec.dir/Board.cpp.obj.provides: CMakeFiles/echec.dir/Board.cpp.obj.
 CMakeFiles/echec.dir/Board.cpp.obj.provides.build: CMakeFiles/echec.dir/Board.cpp.obj
 
 
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj: ../Out_of_Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/echec.dir/Out_of_Board.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Out_of_Board.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Out_of_Board.cpp
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Out_of_Board.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Out_of_Board.cpp > CMakeFiles\echec.dir\Out_of_Board.cpp.i
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Out_of_Board.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Out_of_Board.cpp -o CMakeFiles\echec.dir\Out_of_Board.cpp.s
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Out_of_Board.cpp.obj.requires
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj.provides: CMakeFiles/echec.dir/Out_of_Board.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Out_of_Board.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Out_of_Board.cpp.obj.provides
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj.provides.build: CMakeFiles/echec.dir/Out_of_Board.cpp.obj
+
+
+CMakeFiles/echec.dir/No_Piece.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/No_Piece.cpp.obj: ../No_Piece.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/echec.dir/No_Piece.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\No_Piece.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\No_Piece.cpp
+
+CMakeFiles/echec.dir/No_Piece.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/No_Piece.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\No_Piece.cpp > CMakeFiles\echec.dir\No_Piece.cpp.i
+
+CMakeFiles/echec.dir/No_Piece.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/No_Piece.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\No_Piece.cpp -o CMakeFiles\echec.dir\No_Piece.cpp.s
+
+CMakeFiles/echec.dir/No_Piece.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/No_Piece.cpp.obj.requires
+
+CMakeFiles/echec.dir/No_Piece.cpp.obj.provides: CMakeFiles/echec.dir/No_Piece.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/No_Piece.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/No_Piece.cpp.obj.provides
+
+CMakeFiles/echec.dir/No_Piece.cpp.obj.provides.build: CMakeFiles/echec.dir/No_Piece.cpp.obj
+
+
+CMakeFiles/echec.dir/Obstruction.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Obstruction.cpp.obj: ../Obstruction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/echec.dir/Obstruction.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Obstruction.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Obstruction.cpp
+
+CMakeFiles/echec.dir/Obstruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Obstruction.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Obstruction.cpp > CMakeFiles\echec.dir\Obstruction.cpp.i
+
+CMakeFiles/echec.dir/Obstruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Obstruction.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Obstruction.cpp -o CMakeFiles\echec.dir\Obstruction.cpp.s
+
+CMakeFiles/echec.dir/Obstruction.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Obstruction.cpp.obj.requires
+
+CMakeFiles/echec.dir/Obstruction.cpp.obj.provides: CMakeFiles/echec.dir/Obstruction.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Obstruction.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Obstruction.cpp.obj.provides
+
+CMakeFiles/echec.dir/Obstruction.cpp.obj.provides.build: CMakeFiles/echec.dir/Obstruction.cpp.obj
+
+
+CMakeFiles/echec.dir/Check.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Check.cpp.obj: ../Check.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/echec.dir/Check.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Check.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Check.cpp
+
+CMakeFiles/echec.dir/Check.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Check.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Check.cpp > CMakeFiles\echec.dir\Check.cpp.i
+
+CMakeFiles/echec.dir/Check.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Check.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Check.cpp -o CMakeFiles\echec.dir\Check.cpp.s
+
+CMakeFiles/echec.dir/Check.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Check.cpp.obj.requires
+
+CMakeFiles/echec.dir/Check.cpp.obj.provides: CMakeFiles/echec.dir/Check.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Check.cpp.obj.provides
+
+CMakeFiles/echec.dir/Check.cpp.obj.provides.build: CMakeFiles/echec.dir/Check.cpp.obj
+
+
+CMakeFiles/echec.dir/Check_Mate.cpp.obj: CMakeFiles/echec.dir/flags.make
+CMakeFiles/echec.dir/Check_Mate.cpp.obj: ../Check_Mate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/echec.dir/Check_Mate.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\echec.dir\Check_Mate.cpp.obj -c C:\Users\Mathieu\CLionProjects\echec\Check_Mate.cpp
+
+CMakeFiles/echec.dir/Check_Mate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echec.dir/Check_Mate.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Mathieu\CLionProjects\echec\Check_Mate.cpp > CMakeFiles\echec.dir\Check_Mate.cpp.i
+
+CMakeFiles/echec.dir/Check_Mate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echec.dir/Check_Mate.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Mathieu\CLionProjects\echec\Check_Mate.cpp -o CMakeFiles\echec.dir\Check_Mate.cpp.s
+
+CMakeFiles/echec.dir/Check_Mate.cpp.obj.requires:
+
+.PHONY : CMakeFiles/echec.dir/Check_Mate.cpp.obj.requires
+
+CMakeFiles/echec.dir/Check_Mate.cpp.obj.provides: CMakeFiles/echec.dir/Check_Mate.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Check_Mate.cpp.obj.provides.build
+.PHONY : CMakeFiles/echec.dir/Check_Mate.cpp.obj.provides
+
+CMakeFiles/echec.dir/Check_Mate.cpp.obj.provides.build: CMakeFiles/echec.dir/Check_Mate.cpp.obj
+
+
 # Object files for target echec
 echec_OBJECTS = \
 "CMakeFiles/echec.dir/main.cpp.obj" \
@@ -332,7 +452,12 @@ echec_OBJECTS = \
 "CMakeFiles/echec.dir/Knight.cpp.obj" \
 "CMakeFiles/echec.dir/King.cpp.obj" \
 "CMakeFiles/echec.dir/Player.cpp.obj" \
-"CMakeFiles/echec.dir/Board.cpp.obj"
+"CMakeFiles/echec.dir/Board.cpp.obj" \
+"CMakeFiles/echec.dir/Out_of_Board.cpp.obj" \
+"CMakeFiles/echec.dir/No_Piece.cpp.obj" \
+"CMakeFiles/echec.dir/Obstruction.cpp.obj" \
+"CMakeFiles/echec.dir/Check.cpp.obj" \
+"CMakeFiles/echec.dir/Check_Mate.cpp.obj"
 
 # External object files for target echec
 echec_EXTERNAL_OBJECTS =
@@ -348,11 +473,16 @@ echec.exe: CMakeFiles/echec.dir/Knight.cpp.obj
 echec.exe: CMakeFiles/echec.dir/King.cpp.obj
 echec.exe: CMakeFiles/echec.dir/Player.cpp.obj
 echec.exe: CMakeFiles/echec.dir/Board.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Out_of_Board.cpp.obj
+echec.exe: CMakeFiles/echec.dir/No_Piece.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Obstruction.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Check.cpp.obj
+echec.exe: CMakeFiles/echec.dir/Check_Mate.cpp.obj
 echec.exe: CMakeFiles/echec.dir/build.make
 echec.exe: CMakeFiles/echec.dir/linklibs.rsp
 echec.exe: CMakeFiles/echec.dir/objects1.rsp
 echec.exe: CMakeFiles/echec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable echec.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable echec.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\echec.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -371,6 +501,11 @@ CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Knight.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/King.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Player.cpp.obj.requires
 CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Board.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Out_of_Board.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/No_Piece.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Obstruction.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Check.cpp.obj.requires
+CMakeFiles/echec.dir/requires: CMakeFiles/echec.dir/Check_Mate.cpp.obj.requires
 
 .PHONY : CMakeFiles/echec.dir/requires
 

@@ -94,6 +94,18 @@
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Board.h">
 			<Option target="echec"/>
 		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Check.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Check.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Check_Mate.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Check_Mate.h">
+			<Option target="echec"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/King.cpp">
 			<Option target="echec"/>
 		</Unit>
@@ -104,6 +116,24 @@
 			<Option target="echec"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Knight.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/No_Piece.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/No_Piece.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Obstruction.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Obstruction.h">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h">
 			<Option target="echec"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp">

@@ -13,6 +13,12 @@ CMakeFiles/echec.dir/Board.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/Piece.h
  C:/Users/Mathieu/CLionProjects/echec/Player.h
  C:/Users/Mathieu/CLionProjects/echec/Position.h
+CMakeFiles/echec.dir/Check.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/Check.cpp
+ C:/Users/Mathieu/CLionProjects/echec/Check.h
+CMakeFiles/echec.dir/Check_Mate.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/Check_Mate.cpp
+ C:/Users/Mathieu/CLionProjects/echec/Check_Mate.h
 CMakeFiles/echec.dir/King.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/King.cpp
  C:/Users/Mathieu/CLionProjects/echec/King.h
@@ -23,6 +29,15 @@ CMakeFiles/echec.dir/Knight.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/Knight.h
  C:/Users/Mathieu/CLionProjects/echec/Piece.h
  C:/Users/Mathieu/CLionProjects/echec/Position.h
+CMakeFiles/echec.dir/No_Piece.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/No_Piece.cpp
+ C:/Users/Mathieu/CLionProjects/echec/No_Piece.h
+CMakeFiles/echec.dir/Obstruction.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/Obstruction.cpp
+ C:/Users/Mathieu/CLionProjects/echec/Obstruction.h
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj
+ C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.cpp
+ C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 CMakeFiles/echec.dir/Pawn.cpp.obj
  C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp
  C:/Users/Mathieu/CLionProjects/echec/Pawn.h

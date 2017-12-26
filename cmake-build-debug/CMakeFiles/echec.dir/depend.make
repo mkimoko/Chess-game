@@ -13,6 +13,12 @@ CMakeFiles/echec.dir/Board.cpp.obj: ../Piece.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../Player.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../Position.h
 
+CMakeFiles/echec.dir/Check.cpp.obj: ../Check.cpp
+CMakeFiles/echec.dir/Check.cpp.obj: ../Check.h
+
+CMakeFiles/echec.dir/Check_Mate.cpp.obj: ../Check_Mate.cpp
+CMakeFiles/echec.dir/Check_Mate.cpp.obj: ../Check_Mate.h
+
 CMakeFiles/echec.dir/King.cpp.obj: ../King.cpp
 CMakeFiles/echec.dir/King.cpp.obj: ../King.h
 CMakeFiles/echec.dir/King.cpp.obj: ../Piece.h
@@ -22,6 +28,15 @@ CMakeFiles/echec.dir/Knight.cpp.obj: ../Knight.cpp
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Knight.h
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Piece.h
 CMakeFiles/echec.dir/Knight.cpp.obj: ../Position.h
+
+CMakeFiles/echec.dir/No_Piece.cpp.obj: ../No_Piece.cpp
+CMakeFiles/echec.dir/No_Piece.cpp.obj: ../No_Piece.h
+
+CMakeFiles/echec.dir/Obstruction.cpp.obj: ../Obstruction.cpp
+CMakeFiles/echec.dir/Obstruction.cpp.obj: ../Obstruction.h
+
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj: ../Out_of_Board.cpp
+CMakeFiles/echec.dir/Out_of_Board.cpp.obj: ../Out_of_Board.h
 
 CMakeFiles/echec.dir/Pawn.cpp.obj: ../Pawn.cpp
 CMakeFiles/echec.dir/Pawn.cpp.obj: ../Pawn.h
