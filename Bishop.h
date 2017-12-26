@@ -10,6 +10,7 @@
 class Bishop : public Piece {
     public:
         Bishop(Position position);
+        Bishop(int col, int row);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);

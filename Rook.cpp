@@ -10,8 +10,13 @@ Rook::Rook(Position position)
     m_nb_moves = 0;
 }
 
+Rook::Rook(int col, int row) {
+    m_position = Position(col, row);
+    m_nb_moves = 0;
+}
+
 void Rook::print() {
-    std::cout << " r " << std::endl;
+    std::cout << "r";
 }
 
 int Rook::deplacement(Position position){

@@ -6,6 +6,13 @@ CMakeFiles/echec.dir/Bishop.cpp.obj: ../Bishop.h
 CMakeFiles/echec.dir/Bishop.cpp.obj: ../Piece.h
 CMakeFiles/echec.dir/Bishop.cpp.obj: ../Position.h
 
+CMakeFiles/echec.dir/Board.cpp.obj: ../Board.cpp
+CMakeFiles/echec.dir/Board.cpp.obj: ../Board.h
+CMakeFiles/echec.dir/Board.cpp.obj: ../Pawn.h
+CMakeFiles/echec.dir/Board.cpp.obj: ../Piece.h
+CMakeFiles/echec.dir/Board.cpp.obj: ../Player.h
+CMakeFiles/echec.dir/Board.cpp.obj: ../Position.h
+
 CMakeFiles/echec.dir/King.cpp.obj: ../King.cpp
 CMakeFiles/echec.dir/King.cpp.obj: ../King.h
 CMakeFiles/echec.dir/King.cpp.obj: ../Piece.h
@@ -25,6 +32,17 @@ CMakeFiles/echec.dir/Piece.cpp.obj: ../Piece.cpp
 CMakeFiles/echec.dir/Piece.cpp.obj: ../Piece.h
 CMakeFiles/echec.dir/Piece.cpp.obj: ../Position.h
 
+CMakeFiles/echec.dir/Player.cpp.obj: ../Bishop.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../King.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Knight.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Pawn.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Piece.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Player.cpp
+CMakeFiles/echec.dir/Player.cpp.obj: ../Player.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Position.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Queen.h
+CMakeFiles/echec.dir/Player.cpp.obj: ../Rook.h
+
 CMakeFiles/echec.dir/Position.cpp.obj: ../Position.cpp
 CMakeFiles/echec.dir/Position.cpp.obj: ../Position.h
 
@@ -41,10 +59,12 @@ CMakeFiles/echec.dir/Rook.cpp.obj: ../Rook.cpp
 CMakeFiles/echec.dir/Rook.cpp.obj: ../Rook.h
 
 CMakeFiles/echec.dir/main.cpp.obj: ../Bishop.h
+CMakeFiles/echec.dir/main.cpp.obj: ../Board.h
 CMakeFiles/echec.dir/main.cpp.obj: ../King.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Knight.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Pawn.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Piece.h
+CMakeFiles/echec.dir/main.cpp.obj: ../Player.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Position.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Queen.h
 CMakeFiles/echec.dir/main.cpp.obj: ../Rook.h

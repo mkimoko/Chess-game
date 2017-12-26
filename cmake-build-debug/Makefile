@@ -149,6 +149,33 @@ Bishop.cpp.s:
 	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.s
 .PHONY : Bishop.cpp.s
 
+Board.obj: Board.cpp.obj
+
+.PHONY : Board.obj
+
+# target to build an object file
+Board.cpp.obj:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Board.cpp.obj
+.PHONY : Board.cpp.obj
+
+Board.i: Board.cpp.i
+
+.PHONY : Board.i
+
+# target to preprocess a source file
+Board.cpp.i:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Board.cpp.i
+.PHONY : Board.cpp.i
+
+Board.s: Board.cpp.s
+
+.PHONY : Board.s
+
+# target to generate assembly for a file
+Board.cpp.s:
+	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Board.cpp.s
+.PHONY : Board.cpp.s
+
 King.obj: King.cpp.obj
 
 .PHONY : King.obj
@@ -404,6 +431,9 @@ help:
 	@echo ... Bishop.obj
 	@echo ... Bishop.i
 	@echo ... Bishop.s
+	@echo ... Board.obj
+	@echo ... Board.i
+	@echo ... Board.s
 	@echo ... King.obj
 	@echo ... King.i
 	@echo ... King.s

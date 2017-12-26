@@ -4,7 +4,7 @@
 
 #include "Piece.h"
 
-Position & Piece::getPosition(){
+Position & Piece::getPosition() {
     return m_position;
 }
 
@@ -16,3 +16,12 @@ int Piece::getNbMoves(){
 void Piece::operator()(){
     print();
 }
+
+bool Piece::operator<(Piece * piece) {
+
+    if (getNbMoves() < piece->getNbMoves())
+        return true;
+
+    return false;
+}
+

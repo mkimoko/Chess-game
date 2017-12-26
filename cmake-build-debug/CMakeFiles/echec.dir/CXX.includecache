@@ -16,6 +16,20 @@ C:/Users/Mathieu/CLionProjects/echec/Bishop.h
 Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Piece.h
 
+C:/Users/Mathieu/CLionProjects/echec/Board.cpp
+Board.h
+C:/Users/Mathieu/CLionProjects/echec/Board.h
+Pawn.h
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+iostream
+-
+string
+-
+
+C:/Users/Mathieu/CLionProjects/echec/Board.h
+Player.h
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+
 C:/Users/Mathieu/CLionProjects/echec/King.cpp
 King.h
 C:/Users/Mathieu/CLionProjects/echec/King.h
@@ -47,6 +61,34 @@ C:/Users/Mathieu/CLionProjects/echec/Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Piece.h
 Position.h
 C:/Users/Mathieu/CLionProjects/echec/Position.h
+
+C:/Users/Mathieu/CLionProjects/echec/Player.cpp
+Player.h
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+Pawn.h
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Knight.h
+C:/Users/Mathieu/CLionProjects/echec/Knight.h
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+King.h
+C:/Users/Mathieu/CLionProjects/echec/King.h
+algorithm
+-
+utility
+-
+
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+vector
+-
+map
+-
+Piece.h
+C:/Users/Mathieu/CLionProjects/echec/Piece.h
 
 C:/Users/Mathieu/CLionProjects/echec/Position.cpp
 Position.h
@@ -81,6 +123,8 @@ C:/Users/Mathieu/CLionProjects/echec/Piece.h
 C:/Users/Mathieu/CLionProjects/echec/main.cpp
 iostream
 -
+map
+-
 Position.h
 C:/Users/Mathieu/CLionProjects/echec/Position.h
 Piece.h
@@ -97,4 +141,8 @@ Knight.h
 C:/Users/Mathieu/CLionProjects/echec/Knight.h
 King.h
 C:/Users/Mathieu/CLionProjects/echec/King.h
+Player.h
+C:/Users/Mathieu/CLionProjects/echec/Player.h
+Board.h
+C:/Users/Mathieu/CLionProjects/echec/Board.h
 

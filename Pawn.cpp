@@ -9,11 +9,15 @@ Pawn::Pawn(Position position)
 {
     m_position = position;
     m_nb_moves = 0;
+}
 
+Pawn::Pawn(int col, int row) {
+    m_position = Position(col, row);
+    m_nb_moves = 0;
 }
 
 void Pawn::print() {
-    std::cout << " p " << std::endl;
+    std::cout << "p";
 }
 
 int Pawn::deplacement(Position position){

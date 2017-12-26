@@ -10,7 +10,8 @@
 class Pawn : public Piece{
 
     public:
-        Pawn(Position position);
+        Pawn( Position position);
+        Pawn(int col, int row);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);

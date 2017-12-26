@@ -10,8 +10,13 @@ King::King(Position position)
     m_nb_moves = 0;
 }
 
+King::King(int col, int row) {
+    m_position = Position(col, row);
+    m_nb_moves = 0;
+}
+
 void King::print(){
-    std::cout << " K " << std::endl;
+    std::cout << "K";
 }
 
 int King::deplacement(Position position){

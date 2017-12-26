@@ -10,6 +10,7 @@
 class Rook : public Piece{
     public:
         Rook(Position position);
+        Rook(int col, int row);
         int deplacement(Position position);
         int specialMove(Position position);
         int kill(Piece & piece);

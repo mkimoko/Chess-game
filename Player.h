@@ -7,18 +7,24 @@
 
 
 #include <vector>
+#include <map>
 #include "Piece.h"
 
 class Player {
 
     private:
         int m_id;
-        std::vector<Piece> m_army;
+        std::map< Piece *, bool > m_army;
 
     public:
         Player(int id);
-        std::vector<Piece> & getArmy();
-        Piece & piece(Position position);
+        std::map< Piece *, bool > & getArmy();
+        Piece * piece(Position position);
+        std::vector< Piece * > alive();
+        std::vector< Piece * > dead();
+        std::vector<Piece *> classement()const;
+
+
 };
 
 

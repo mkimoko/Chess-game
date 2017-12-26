@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Bishop.h">
 			<Option target="echec"/>
 		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Board.cpp">
+			<Option target="echec"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/Board.h">
+			<Option target="echec"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/echec/King.cpp">
 			<Option target="echec"/>
 		</Unit>
