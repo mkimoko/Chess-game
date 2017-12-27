@@ -58,7 +58,9 @@ Player::Player(int id) {
 
 }
 
-
+int Player::getId(){
+    return m_id;
+}
 
 /*bool Player::operator<(Piece * p1, Piece * p2){
 

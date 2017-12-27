@@ -54,6 +54,9 @@ int main() {
 
 
 
+//Créer template comportement fonction
+    //template piece se comporte différemment en fonction type
+    //retourne 1 si on 0 sinon
 //Paire piece mangé ou pas bool
 //Template Board, int pour historique
 //classment des piece plus joué stl

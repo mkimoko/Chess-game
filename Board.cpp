@@ -31,7 +31,7 @@ void Board::printTab() {
 
                 if (it->second == true){
                     if (it->first->getPosition().getCol() == k  && it->first->getPosition().getRow() == j){
-                        it->first->operator()();std::cout << "\t";
+                        it->first->operator()();std::cout <<m_p2.getId()<< "\t";
                         test1 = m_p2.piece(Position(k,j));
                     }
                 }
@@ -41,7 +41,7 @@ void Board::printTab() {
 
                 if (it->second == true){
                     if (it->first->getPosition().getCol() == k  && it->first->getPosition().getRow() == j){
-                        it->first->operator()();std::cout << "\t";
+                        it->first->operator()();std::cout <<m_p1.getId()<< "\t";
                         test1 = m_p1.piece(Position(k,j));
                     }
                 }
