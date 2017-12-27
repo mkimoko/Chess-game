@@ -10,7 +10,7 @@
 
 class Out_of_Board : public std::exception{
     private:
-        const std::string & m_description;
+        const char* m_description;
     public:
         Out_of_Board(  );
         const char *what() const throw();

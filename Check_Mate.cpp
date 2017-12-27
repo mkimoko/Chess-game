@@ -7,5 +7,5 @@
 Check_Mate::Check_Mate():m_description("Check Mate!") {}
 
 const char* Check_Mate::what() const throw(){
-    return  m_description.c_str();
+    return  m_description;
 }

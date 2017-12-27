@@ -10,6 +10,7 @@
 class Pawn : public Piece{
 
     public:
+        int getCode();
         Pawn( Position position);
         Pawn(int col, int row);
         int deplacement(Position position);

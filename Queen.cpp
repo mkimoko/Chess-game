@@ -3,6 +3,7 @@
 //
 
 #include "Queen.h"
+#include "Out_of_Board.h"
 
 Queen::Queen(Position position):m_bishop(position), m_rook(position)
 {
@@ -15,6 +16,9 @@ Queen::Queen(int col, int row) :m_bishop(col, row), m_rook(col, row){
     m_nb_moves = 0;
 }
 
+int Queen::getCode(){
+    return 5;
+}
 Bishop & Queen::getBishop(){
     return m_bishop;
 }
@@ -35,17 +39,18 @@ void Queen::positionement(Position position) {
 
 int Queen::deplacement(Position position){
 
-    std::cout<< getNbMoves()<<std::endl;
-
+    if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+        throw Out_of_Board();
+    }
     if (getRook().deplacement(position) == 1){
-        positionement(getRook().getPosition());
-        m_nb_moves++;
+        /*positionement(getRook().getPosition());
+        m_nb_moves++;*/
         return 1;
     }
 
     if (getBishop().deplacement(position) == 1){
-        positionement(getBishop().getPosition());
-        m_nb_moves++;
+        /*positionement(getBishop().getPosition());
+        m_nb_moves++;*/
         return 1;
     }
 
@@ -56,15 +61,19 @@ int Queen::deplacement(Position position){
 
 int Queen::kill(Piece & piece){
 
+    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+        throw Out_of_Board();
+    }
+
     if (getRook().deplacement(piece.getPosition()) == 1){
-        positionement(getRook().getPosition());
-        m_nb_moves++;
+        /*positionement(getRook().getPosition());
+        m_nb_moves++;*/
         return 1;
     }
 
     if (getBishop().deplacement(piece.getPosition()) == 1){
-        positionement(getBishop().getPosition());
-        m_nb_moves++;
+        /*positionement(getBishop().getPosition());
+        m_nb_moves++;*/
         return 1;
     }
     return 0;

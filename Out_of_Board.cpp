@@ -4,8 +4,8 @@
 
 #include "Out_of_Board.h"
 
-Out_of_Board::Out_of_Board() :m_description("Position you choose is out of the board") {}
+Out_of_Board::Out_of_Board() :m_description("\nPosition you choose is out of the board\n") {}
 
 const char *Out_of_Board::what() const throw(){
-    return  m_description.c_str();
+    return  m_description;
 }

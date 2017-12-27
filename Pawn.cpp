@@ -3,12 +3,17 @@
 //
 
 #include "Pawn.h"
+#include "Out_of_Board.h"
 
 
 Pawn::Pawn(Position position)
 {
     m_position = position;
     m_nb_moves = 0;
+}
+
+int Pawn::getCode(){
+    return 1;
 }
 
 Pawn::Pawn(int col, int row) {
@@ -22,9 +27,13 @@ void Pawn::print() {
 
 int Pawn::deplacement(Position position){
 
-    if( position.getCol() == getPosition().getCol()+1 && position.getRow() == getPosition().getRow() ) {
-        m_position.placement(position.getCol(), getPosition().getRow());
-        m_nb_moves++;
+    if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+        throw Out_of_Board();
+    }
+
+    if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+1 ) {
+        /*m_position.placement(position.getCol(), getPosition().getRow());
+        m_nb_moves++;*/
         return 1;
     }
 
@@ -34,6 +43,10 @@ int Pawn::deplacement(Position position){
 
 
 int Pawn::kill(Piece & piece){
+
+    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+        throw Out_of_Board();
+    }
 
     if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
 
@@ -53,6 +66,9 @@ int Pawn::kill(Piece & piece){
 
 int Pawn::specialMove(Position position){
 
+    if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+        throw Out_of_Board();
+    }
 
     if( getNbMoves() == 0){
         if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+2 ) {

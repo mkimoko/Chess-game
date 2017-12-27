@@ -26,6 +26,8 @@ class Player {
         std::vector<Piece *> classement()const;
 
 
+
+
 };
 
 

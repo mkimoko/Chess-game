@@ -47,7 +47,40 @@ int main() {
     }*/
 
     Board board ;
+    //board.printTab();
+
+    /*board.deplacement(1, Position(2,2), Position(2,3));
+
     board.printTab();
+
+    board.deplacement(1, Position(3,1), Position(2,2));
+
+    board.printTab();
+
+    board.deplacement(1, Position(1,2), Position(1,3));*/
+
+    //board.deplacement(1, Position(2,2), Position(4,4));
+
+    //board.printTab();
+
+    //board.accessibility(board.piece())
+    //std::cout << "1"<<std::endl;
+    board.deplacement(1, Position(2,2), Position(2,3));
+    //std::cout << "2"<<std::endl;
+    board.deplacement(1, Position(3,1), Position(2,2));
+    //std::cout << "3"<<std::endl;
+    //board.printTab();
+    //board.accessibility(board.piece(Position(2,2)), Position(4,4));
+    //std::cout << "4"<<std::endl;
+    board.deplacement(1, Position(2,2), Position(4,4));
+    board.deplacement(1, Position(2,1), Position(3,1));
+    board.printTab();
+
+    /*Piece * p = board.piece(Position(1,2));
+    p->getPosition()();*/
+
+    //Access<10,3> acces;
+    //acces.getPosition()();
 
 
 

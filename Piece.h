@@ -15,8 +15,10 @@ class Piece {
         virtual void print() = 0;
 
     public:
+        virtual int getCode() =0;
         Position & getPosition();
         int getNbMoves();
+        void upNbMoves();
         virtual int deplacement(Position position) = 0;
         virtual int specialMove(Position position) = 0;
         virtual int kill(Piece & piece) = 0;

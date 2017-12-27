@@ -4,6 +4,8 @@
 
 #include "Piece.h"
 
+
+
 Position & Piece::getPosition() {
     return m_position;
 }
@@ -11,6 +13,10 @@ Position & Piece::getPosition() {
 
 int Piece::getNbMoves(){
     return m_nb_moves;
+}
+
+void Piece::upNbMoves() {
+    m_nb_moves++;
 }
 
 void Piece::operator()(){

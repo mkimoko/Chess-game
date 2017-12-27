@@ -2,6 +2,7 @@
 // Created by Mathieu on 18/12/2017.
 //
 #include "Bishop.h"
+#include "Out_of_Board.h"
 #include <cstdlib>
 
 Bishop::Bishop(Position position)
@@ -15,11 +16,19 @@ Bishop::Bishop(int col, int row) {
     m_nb_moves = 0;
 }
 
+int Bishop::getCode() {
+    return 3;
+}
+
 void Bishop::print(){
     std::cout << "b";
 }
 
 int Bishop::deplacement(Position position){
+
+    if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+        throw Out_of_Board();
+    }
 
     if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
 
@@ -28,8 +37,8 @@ int Bishop::deplacement(Position position){
 
         if( col_decal == row_decal ){
 
-            m_position.placement(position.getCol(), position.getRow());
-            m_nb_moves++;
+            /*m_position.placement(position.getCol(), position.getRow());
+            m_nb_moves++;*/
             return 1;
         }
     }
@@ -42,6 +51,10 @@ int Bishop::deplacement(Position position){
 
 int Bishop::kill(Piece & piece){
 
+    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+        throw Out_of_Board();
+    }
+
     if( getPosition().getCol() != piece.getPosition().getCol() || getPosition().getRow() != piece.getPosition().getRow() ){
 
         int col_decal = abs(getPosition().getCol()- piece.getPosition().getCol());
@@ -49,7 +62,7 @@ int Bishop::kill(Piece & piece){
 
         if( col_decal == row_decal  ){
 
-            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+            //getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
             return 1;
         }
 

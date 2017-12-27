@@ -11,7 +11,7 @@
 
 class Check : public std::exception{
     private:
-        const std::string & m_description;
+        const char * m_description;
     public:
         Check();
         const char *what() const throw();

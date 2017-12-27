@@ -7,5 +7,5 @@
 Check::Check():m_description("Check !") {}
 
 const char* Check::what() const throw(){
-    return  m_description.c_str();
+    return  m_description;
 }

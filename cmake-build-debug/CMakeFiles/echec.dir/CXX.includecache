@@ -9,6 +9,8 @@
 C:/Users/Mathieu/CLionProjects/echec/Bishop.cpp
 Bishop.h
 C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 cstdlib
 -
 
@@ -21,6 +23,10 @@ Board.h
 C:/Users/Mathieu/CLionProjects/echec/Board.h
 Pawn.h
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+No_Piece.h
+C:/Users/Mathieu/CLionProjects/echec/No_Piece.h
+Obstruction.h
+C:/Users/Mathieu/CLionProjects/echec/Obstruction.h
 iostream
 -
 string
@@ -29,6 +35,18 @@ string
 C:/Users/Mathieu/CLionProjects/echec/Board.h
 Player.h
 C:/Users/Mathieu/CLionProjects/echec/Player.h
+Pawn.h
+C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Rook.h
+C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Bishop.h
+C:/Users/Mathieu/CLionProjects/echec/Bishop.h
+Knight.h
+C:/Users/Mathieu/CLionProjects/echec/Knight.h
+Queen.h
+C:/Users/Mathieu/CLionProjects/echec/Queen.h
+King.h
+C:/Users/Mathieu/CLionProjects/echec/King.h
 
 C:/Users/Mathieu/CLionProjects/echec/Check.cpp
 Check.h
@@ -53,6 +71,8 @@ string
 C:/Users/Mathieu/CLionProjects/echec/King.cpp
 King.h
 C:/Users/Mathieu/CLionProjects/echec/King.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/echec/King.h
 Piece.h
@@ -61,6 +81,8 @@ C:/Users/Mathieu/CLionProjects/echec/Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Knight.cpp
 Knight.h
 C:/Users/Mathieu/CLionProjects/echec/Knight.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/echec/Knight.h
 Piece.h
@@ -99,6 +121,8 @@ exception
 C:/Users/Mathieu/CLionProjects/echec/Pawn.cpp
 Pawn.h
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/echec/Pawn.h
 Piece.h
@@ -127,6 +151,10 @@ Queen.h
 C:/Users/Mathieu/CLionProjects/echec/Queen.h
 King.h
 C:/Users/Mathieu/CLionProjects/echec/King.h
+No_Piece.h
+C:/Users/Mathieu/CLionProjects/echec/No_Piece.h
+Obstruction.h
+C:/Users/Mathieu/CLionProjects/echec/Obstruction.h
 algorithm
 -
 utility
@@ -153,6 +181,8 @@ string
 C:/Users/Mathieu/CLionProjects/echec/Queen.cpp
 Queen.h
 C:/Users/Mathieu/CLionProjects/echec/Queen.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/echec/Queen.h
 Piece.h
@@ -165,6 +195,8 @@ C:/Users/Mathieu/CLionProjects/echec/Rook.h
 C:/Users/Mathieu/CLionProjects/echec/Rook.cpp
 Rook.h
 C:/Users/Mathieu/CLionProjects/echec/Rook.h
+Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/echec/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/echec/Rook.h
 Piece.h

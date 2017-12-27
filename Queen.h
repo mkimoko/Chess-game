@@ -19,6 +19,7 @@ class Queen : public Piece{
     public:
         Queen(Position position);
         Queen(int col, int row);
+        int getCode();
         Bishop & getBishop();
         Rook & getRook();
 

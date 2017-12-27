@@ -4,8 +4,8 @@
 
 #include "Obstruction.h"
 
-Obstruction::Obstruction():m_description("You can't go there...\nThere is another piece between your position and the one you want to go") {}
+Obstruction::Obstruction():m_description("\nYou can't go there...\n") {}
 
 const char* Obstruction::what() const throw(){
-    return  m_description.c_str();
+    return  m_description;
 }

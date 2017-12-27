@@ -4,6 +4,8 @@
 
 #include "Board.h"
 #include "Pawn.h"
+#include "No_Piece.h"
+#include "Obstruction.h"
 #include <iostream>
 #include <string>
 
@@ -61,5 +63,183 @@ void Board::printTab() {
     for (int i=0; i<8; i++){
         std::cout<< (char)(col+i)<<"\t";
     }
+    std::cout<<"\n\n ";
+}
 
+Piece * Board::piece(Position position){
+
+    if (m_p1.piece(position) != nullptr)
+        return m_p1.piece(position);
+
+    if (m_p2.piece(position) != nullptr)
+        return m_p2.piece(position);
+
+    return nullptr;
+}
+
+Player & Board::getPlayer1(){
+    return m_p1;
+}
+
+Player & Board::getPlayer2(){
+    return m_p2;
+}
+
+void Board::deplacement(int id,Position start, Position end){
+    Piece * p ;
+    try {
+
+        if (id == 1)
+            p = m_p1.piece(start);
+
+        if (id == 2)
+            p = m_p2.piece(start);
+
+        if (p->deplacement(end) == 1){
+            if (accessibility(p, end) == true){
+                p->getPosition().placement(end.getCol(),end.getRow());
+            }
+            else{
+                throw Obstruction();
+            }
+        }else{
+            throw Obstruction();
+        }
+
+    }
+    catch (const std::exception &e){
+        std::cerr << e.what() << std::endl;
+    }
+
+}
+
+bool Board::accessibility(Piece * piece, Position p){
+    if (piece->getCode() == 1){
+        //std::cout << "Piece";
+        return accessibility( (Pawn *)piece, p);
+    }
+
+    if (piece->getCode() == 2){
+        //std::cout << "Piece";
+        return accessibility( (Rook *)piece, p);
+    }
+
+    if (piece->getCode() == 3){
+        //std::cout << "Piece";
+        return accessibility( (Bishop *)piece, p);
+    }
+
+    if (piece->getCode() == 4){
+        return accessibility((Knight *) piece, p);
+    }
+}
+
+bool Board::accessibility(Pawn * pawn, Position p){
+    if (pawn->deplacement(p) == 1){
+        //std::cout << "Pion";
+        try {
+            piece(p); /*Regarde si il n'y  a pas de piece*/
+        }
+        catch (const std::exception &e){
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Board::accessibility(Rook *rook, Position p){
+    if (rook->deplacement(p) == 1){
+        try {
+            piece(p);
+        }catch (const std::exception &e){
+
+            if (rook->getPosition().getCol()+1 == p.getCol() || rook->getPosition().getCol()-1 == p.getCol())
+                return true;
+            if (rook->getPosition().getRow()+1 == p.getRow() || rook->getPosition().getRow()-1 == p.getCol())
+                return true;
+
+            if (rook->getPosition().getCol() < p.getCol())
+                return accessibility(rook, Position (p.getCol()+1, p.getRow()));
+            if (rook->getPosition().getCol() > p.getCol())
+                return accessibility(rook, Position (p.getCol()-1, p.getRow()));
+
+            if (rook->getPosition().getRow() < p.getRow())
+                return accessibility(rook, Position (p.getCol(), p.getRow()+1));
+            if (rook->getPosition().getCol() > p.getCol())
+                return accessibility(rook, Position (p.getCol(), p.getRow()-1));
+        }
+
+    }
+    return false;
+}
+
+bool Board::accessibility(Bishop * bishop, Position p){
+    if (bishop->deplacement(p) == 1){
+        try {
+            piece(p);
+        }catch (const std::exception &e){
+
+            if (bishop->getPosition().getCol() < p.getCol()){
+                if (bishop->getPosition().getRow() < p.getRow()){
+                    if (bishop->getPosition().getCol()+1 == p.getCol()){
+                        if (bishop->getPosition().getRow()+1 == p.getRow()){
+                            return true;
+                        }
+
+                    }
+                    //std::cout<<"new tour +1+1";
+                    Position(p.getCol()-1, p.getRow()-1)();
+                    return accessibility(bishop, Position(p.getCol()-1, p.getRow()-1));
+                }
+
+                if (bishop->getPosition().getRow() > p.getRow()){
+                    if (bishop->getPosition().getCol()+1 == p.getCol()){
+                        if (bishop->getPosition().getRow()-1 == p.getRow()){
+                            return true;
+                        }
+
+                    }
+                    return accessibility(bishop, Position(p.getCol()-1, p.getRow()+1));
+                }
+
+            }
+
+            if (bishop->getPosition().getCol() > p.getCol()){
+                if (bishop->getPosition().getRow() < p.getRow()){
+                    if (bishop->getPosition().getCol()-1 == p.getCol()){
+                        if (bishop->getPosition().getRow()+1 == p.getRow()){
+                            return true;
+                        }
+
+                    }
+                    return accessibility(bishop, Position(p.getCol()+1, p.getRow()-1));
+                }
+
+                if (bishop->getPosition().getRow() > p.getRow()){
+                    if (bishop->getPosition().getCol()-1 == p.getCol()){
+                        if (bishop->getPosition().getRow()-1 == p.getRow()){
+                            std::cout<<"-1-1";
+                            return true;
+                        }
+                    }
+                    return accessibility(bishop, Position(p.getCol()+1, p.getRow()+1));
+                }
+
+            }
+        }
+    }
+    return false;
+}
+
+bool Board::accessibility(Knight * knight, Position p){
+    if (knight->deplacement(p) == 1){
+        try {
+            piece(p);
+        }catch (const std::exception &e){
+            return true;
+        }
+
+    }
+    std::cout << "bijour";
+    return false;
 }

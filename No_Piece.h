@@ -10,7 +10,7 @@
 
 class No_Piece : public std::exception{
     private:
-        const std::string & m_description;
+        const char * m_description;
 
 public:
         No_Piece();

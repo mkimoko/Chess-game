@@ -9,6 +9,8 @@
 #include "Bishop.h"
 #include "Queen.h"
 #include "King.h"
+#include "No_Piece.h"
+#include "Obstruction.h"
 #include <algorithm>
 #include <utility>
 
@@ -62,14 +64,6 @@ int Player::getId(){
     return m_id;
 }
 
-/*bool Player::operator<(Piece * p1, Piece * p2){
-
-    if (p1->getNbMoves() < p2->getNbMoves())
-        return true;
-
-    return false;
-}*/
-
 
 std::map<Piece *, bool> & Player::getArmy(){
     return m_army;
@@ -85,9 +79,9 @@ std::map<Piece*,bool>::iterator it;
                 return (it->first);
             }
         }
-
     }
-    return nullptr;
+
+    throw No_Piece();
 }
 
 
@@ -134,3 +128,5 @@ std::vector<Piece *> Player::classement()const{
     }
     return result;
 }
+
+

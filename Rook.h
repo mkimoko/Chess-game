@@ -9,6 +9,7 @@
 
 class Rook : public Piece{
     public:
+        int getCode();
         Rook(Position position);
         Rook(int col, int row);
         int deplacement(Position position);

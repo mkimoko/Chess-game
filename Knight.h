@@ -10,6 +10,7 @@
 
 class Knight : public Piece {
     public:
+        int getCode();
         Knight(Position position);
         Knight(int col, int row);
         int deplacement(Position position);

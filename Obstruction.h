@@ -11,7 +11,7 @@
 
 class Obstruction : public std::exception{
     private:
-        const std::string & m_description;
+        const char* m_description;
     public:
         Obstruction();
         const char *what() const throw();
