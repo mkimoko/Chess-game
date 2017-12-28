@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Mathieu\CLionProjects\echec
+CMAKE_SOURCE_DIR = C:\Users\Mathieu\CLionProjects\Chess
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Mathieu\CLionProjects\Chess\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mathieu\CLionProjects\Chess\cmake-build-debug\CMakeFiles C:\Users\Mathieu\CLionProjects\Chess\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mathieu\CLionProjects\echec\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Mathieu\CLionProjects\Chess\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,260 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named echec
+# Target rules for targets named Chess
 
 # Build rule for target.
-echec: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 echec
-.PHONY : echec
+Chess: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Chess
+.PHONY : Chess
 
 # fast build rule for target.
-echec/fast:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/build
-.PHONY : echec/fast
-
-Bishop.obj: Bishop.cpp.obj
-
-.PHONY : Bishop.obj
-
-# target to build an object file
-Bishop.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.obj
-.PHONY : Bishop.cpp.obj
-
-Bishop.i: Bishop.cpp.i
-
-.PHONY : Bishop.i
-
-# target to preprocess a source file
-Bishop.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.i
-.PHONY : Bishop.cpp.i
-
-Bishop.s: Bishop.cpp.s
-
-.PHONY : Bishop.s
-
-# target to generate assembly for a file
-Bishop.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Bishop.cpp.s
-.PHONY : Bishop.cpp.s
-
-King.obj: King.cpp.obj
-
-.PHONY : King.obj
-
-# target to build an object file
-King.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.obj
-.PHONY : King.cpp.obj
-
-King.i: King.cpp.i
-
-.PHONY : King.i
-
-# target to preprocess a source file
-King.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.i
-.PHONY : King.cpp.i
-
-King.s: King.cpp.s
-
-.PHONY : King.s
-
-# target to generate assembly for a file
-King.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/King.cpp.s
-.PHONY : King.cpp.s
-
-Knight.obj: Knight.cpp.obj
-
-.PHONY : Knight.obj
-
-# target to build an object file
-Knight.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.obj
-.PHONY : Knight.cpp.obj
-
-Knight.i: Knight.cpp.i
-
-.PHONY : Knight.i
-
-# target to preprocess a source file
-Knight.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.i
-.PHONY : Knight.cpp.i
-
-Knight.s: Knight.cpp.s
-
-.PHONY : Knight.s
-
-# target to generate assembly for a file
-Knight.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Knight.cpp.s
-.PHONY : Knight.cpp.s
-
-Pawn.obj: Pawn.cpp.obj
-
-.PHONY : Pawn.obj
-
-# target to build an object file
-Pawn.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Pawn.cpp.obj
-.PHONY : Pawn.cpp.obj
-
-Pawn.i: Pawn.cpp.i
-
-.PHONY : Pawn.i
-
-# target to preprocess a source file
-Pawn.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Pawn.cpp.i
-.PHONY : Pawn.cpp.i
-
-Pawn.s: Pawn.cpp.s
-
-.PHONY : Pawn.s
-
-# target to generate assembly for a file
-Pawn.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Pawn.cpp.s
-.PHONY : Pawn.cpp.s
-
-Piece.obj: Piece.cpp.obj
-
-.PHONY : Piece.obj
-
-# target to build an object file
-Piece.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Piece.cpp.obj
-.PHONY : Piece.cpp.obj
-
-Piece.i: Piece.cpp.i
-
-.PHONY : Piece.i
-
-# target to preprocess a source file
-Piece.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Piece.cpp.i
-.PHONY : Piece.cpp.i
-
-Piece.s: Piece.cpp.s
-
-.PHONY : Piece.s
-
-# target to generate assembly for a file
-Piece.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Piece.cpp.s
-.PHONY : Piece.cpp.s
-
-Player.obj: Player.cpp.obj
-
-.PHONY : Player.obj
-
-# target to build an object file
-Player.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.obj
-.PHONY : Player.cpp.obj
-
-Player.i: Player.cpp.i
-
-.PHONY : Player.i
-
-# target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.i
-.PHONY : Player.cpp.i
-
-Player.s: Player.cpp.s
-
-.PHONY : Player.s
-
-# target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Player.cpp.s
-.PHONY : Player.cpp.s
-
-Position.obj: Position.cpp.obj
-
-.PHONY : Position.obj
-
-# target to build an object file
-Position.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Position.cpp.obj
-.PHONY : Position.cpp.obj
-
-Position.i: Position.cpp.i
-
-.PHONY : Position.i
-
-# target to preprocess a source file
-Position.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Position.cpp.i
-.PHONY : Position.cpp.i
-
-Position.s: Position.cpp.s
-
-.PHONY : Position.s
-
-# target to generate assembly for a file
-Position.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Position.cpp.s
-.PHONY : Position.cpp.s
-
-Queen.obj: Queen.cpp.obj
-
-.PHONY : Queen.obj
-
-# target to build an object file
-Queen.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.obj
-.PHONY : Queen.cpp.obj
-
-Queen.i: Queen.cpp.i
-
-.PHONY : Queen.i
-
-# target to preprocess a source file
-Queen.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.i
-.PHONY : Queen.cpp.i
-
-Queen.s: Queen.cpp.s
-
-.PHONY : Queen.s
-
-# target to generate assembly for a file
-Queen.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Queen.cpp.s
-.PHONY : Queen.cpp.s
-
-Rook.obj: Rook.cpp.obj
-
-.PHONY : Rook.obj
-
-# target to build an object file
-Rook.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.obj
-.PHONY : Rook.cpp.obj
-
-Rook.i: Rook.cpp.i
-
-.PHONY : Rook.i
-
-# target to preprocess a source file
-Rook.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.i
-.PHONY : Rook.cpp.i
-
-Rook.s: Rook.cpp.s
-
-.PHONY : Rook.s
-
-# target to generate assembly for a file
-Rook.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/Rook.cpp.s
-.PHONY : Rook.cpp.s
+Chess/fast:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/build
+.PHONY : Chess/fast
 
 main.obj: main.cpp.obj
 
@@ -371,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -380,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -389,8 +146,413 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\echec.dir\build.make CMakeFiles/echec.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Bishop.obj: src/Bishop.cpp.obj
+
+.PHONY : src/Bishop.obj
+
+# target to build an object file
+src/Bishop.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Bishop.cpp.obj
+.PHONY : src/Bishop.cpp.obj
+
+src/Bishop.i: src/Bishop.cpp.i
+
+.PHONY : src/Bishop.i
+
+# target to preprocess a source file
+src/Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Bishop.cpp.i
+.PHONY : src/Bishop.cpp.i
+
+src/Bishop.s: src/Bishop.cpp.s
+
+.PHONY : src/Bishop.s
+
+# target to generate assembly for a file
+src/Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Bishop.cpp.s
+.PHONY : src/Bishop.cpp.s
+
+src/Board.obj: src/Board.cpp.obj
+
+.PHONY : src/Board.obj
+
+# target to build an object file
+src/Board.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Board.cpp.obj
+.PHONY : src/Board.cpp.obj
+
+src/Board.i: src/Board.cpp.i
+
+.PHONY : src/Board.i
+
+# target to preprocess a source file
+src/Board.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
+
+src/Board.s: src/Board.cpp.s
+
+.PHONY : src/Board.s
+
+# target to generate assembly for a file
+src/Board.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
+
+src/Check.obj: src/Check.cpp.obj
+
+.PHONY : src/Check.obj
+
+# target to build an object file
+src/Check.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check.cpp.obj
+.PHONY : src/Check.cpp.obj
+
+src/Check.i: src/Check.cpp.i
+
+.PHONY : src/Check.i
+
+# target to preprocess a source file
+src/Check.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check.cpp.i
+.PHONY : src/Check.cpp.i
+
+src/Check.s: src/Check.cpp.s
+
+.PHONY : src/Check.s
+
+# target to generate assembly for a file
+src/Check.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check.cpp.s
+.PHONY : src/Check.cpp.s
+
+src/Check_Mate.obj: src/Check_Mate.cpp.obj
+
+.PHONY : src/Check_Mate.obj
+
+# target to build an object file
+src/Check_Mate.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check_Mate.cpp.obj
+.PHONY : src/Check_Mate.cpp.obj
+
+src/Check_Mate.i: src/Check_Mate.cpp.i
+
+.PHONY : src/Check_Mate.i
+
+# target to preprocess a source file
+src/Check_Mate.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check_Mate.cpp.i
+.PHONY : src/Check_Mate.cpp.i
+
+src/Check_Mate.s: src/Check_Mate.cpp.s
+
+.PHONY : src/Check_Mate.s
+
+# target to generate assembly for a file
+src/Check_Mate.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check_Mate.cpp.s
+.PHONY : src/Check_Mate.cpp.s
+
+src/King.obj: src/King.cpp.obj
+
+.PHONY : src/King.obj
+
+# target to build an object file
+src/King.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/King.cpp.obj
+.PHONY : src/King.cpp.obj
+
+src/King.i: src/King.cpp.i
+
+.PHONY : src/King.i
+
+# target to preprocess a source file
+src/King.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/King.cpp.i
+.PHONY : src/King.cpp.i
+
+src/King.s: src/King.cpp.s
+
+.PHONY : src/King.s
+
+# target to generate assembly for a file
+src/King.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/King.cpp.s
+.PHONY : src/King.cpp.s
+
+src/Knight.obj: src/Knight.cpp.obj
+
+.PHONY : src/Knight.obj
+
+# target to build an object file
+src/Knight.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Knight.cpp.obj
+.PHONY : src/Knight.cpp.obj
+
+src/Knight.i: src/Knight.cpp.i
+
+.PHONY : src/Knight.i
+
+# target to preprocess a source file
+src/Knight.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Knight.cpp.i
+.PHONY : src/Knight.cpp.i
+
+src/Knight.s: src/Knight.cpp.s
+
+.PHONY : src/Knight.s
+
+# target to generate assembly for a file
+src/Knight.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Knight.cpp.s
+.PHONY : src/Knight.cpp.s
+
+src/No_Piece.obj: src/No_Piece.cpp.obj
+
+.PHONY : src/No_Piece.obj
+
+# target to build an object file
+src/No_Piece.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/No_Piece.cpp.obj
+.PHONY : src/No_Piece.cpp.obj
+
+src/No_Piece.i: src/No_Piece.cpp.i
+
+.PHONY : src/No_Piece.i
+
+# target to preprocess a source file
+src/No_Piece.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/No_Piece.cpp.i
+.PHONY : src/No_Piece.cpp.i
+
+src/No_Piece.s: src/No_Piece.cpp.s
+
+.PHONY : src/No_Piece.s
+
+# target to generate assembly for a file
+src/No_Piece.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/No_Piece.cpp.s
+.PHONY : src/No_Piece.cpp.s
+
+src/Obstruction.obj: src/Obstruction.cpp.obj
+
+.PHONY : src/Obstruction.obj
+
+# target to build an object file
+src/Obstruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Obstruction.cpp.obj
+.PHONY : src/Obstruction.cpp.obj
+
+src/Obstruction.i: src/Obstruction.cpp.i
+
+.PHONY : src/Obstruction.i
+
+# target to preprocess a source file
+src/Obstruction.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Obstruction.cpp.i
+.PHONY : src/Obstruction.cpp.i
+
+src/Obstruction.s: src/Obstruction.cpp.s
+
+.PHONY : src/Obstruction.s
+
+# target to generate assembly for a file
+src/Obstruction.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Obstruction.cpp.s
+.PHONY : src/Obstruction.cpp.s
+
+src/Out_of_Board.obj: src/Out_of_Board.cpp.obj
+
+.PHONY : src/Out_of_Board.obj
+
+# target to build an object file
+src/Out_of_Board.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Out_of_Board.cpp.obj
+.PHONY : src/Out_of_Board.cpp.obj
+
+src/Out_of_Board.i: src/Out_of_Board.cpp.i
+
+.PHONY : src/Out_of_Board.i
+
+# target to preprocess a source file
+src/Out_of_Board.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Out_of_Board.cpp.i
+.PHONY : src/Out_of_Board.cpp.i
+
+src/Out_of_Board.s: src/Out_of_Board.cpp.s
+
+.PHONY : src/Out_of_Board.s
+
+# target to generate assembly for a file
+src/Out_of_Board.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Out_of_Board.cpp.s
+.PHONY : src/Out_of_Board.cpp.s
+
+src/Pawn.obj: src/Pawn.cpp.obj
+
+.PHONY : src/Pawn.obj
+
+# target to build an object file
+src/Pawn.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Pawn.cpp.obj
+.PHONY : src/Pawn.cpp.obj
+
+src/Pawn.i: src/Pawn.cpp.i
+
+.PHONY : src/Pawn.i
+
+# target to preprocess a source file
+src/Pawn.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Pawn.cpp.i
+.PHONY : src/Pawn.cpp.i
+
+src/Pawn.s: src/Pawn.cpp.s
+
+.PHONY : src/Pawn.s
+
+# target to generate assembly for a file
+src/Pawn.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Pawn.cpp.s
+.PHONY : src/Pawn.cpp.s
+
+src/Piece.obj: src/Piece.cpp.obj
+
+.PHONY : src/Piece.obj
+
+# target to build an object file
+src/Piece.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Piece.cpp.obj
+.PHONY : src/Piece.cpp.obj
+
+src/Piece.i: src/Piece.cpp.i
+
+.PHONY : src/Piece.i
+
+# target to preprocess a source file
+src/Piece.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Piece.cpp.i
+.PHONY : src/Piece.cpp.i
+
+src/Piece.s: src/Piece.cpp.s
+
+.PHONY : src/Piece.s
+
+# target to generate assembly for a file
+src/Piece.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Piece.cpp.s
+.PHONY : src/Piece.cpp.s
+
+src/Player.obj: src/Player.cpp.obj
+
+.PHONY : src/Player.obj
+
+# target to build an object file
+src/Player.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Player.cpp.obj
+.PHONY : src/Player.cpp.obj
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
+src/Position.obj: src/Position.cpp.obj
+
+.PHONY : src/Position.obj
+
+# target to build an object file
+src/Position.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Position.cpp.obj
+.PHONY : src/Position.cpp.obj
+
+src/Position.i: src/Position.cpp.i
+
+.PHONY : src/Position.i
+
+# target to preprocess a source file
+src/Position.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Position.cpp.i
+.PHONY : src/Position.cpp.i
+
+src/Position.s: src/Position.cpp.s
+
+.PHONY : src/Position.s
+
+# target to generate assembly for a file
+src/Position.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Position.cpp.s
+.PHONY : src/Position.cpp.s
+
+src/Queen.obj: src/Queen.cpp.obj
+
+.PHONY : src/Queen.obj
+
+# target to build an object file
+src/Queen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Queen.cpp.obj
+.PHONY : src/Queen.cpp.obj
+
+src/Queen.i: src/Queen.cpp.i
+
+.PHONY : src/Queen.i
+
+# target to preprocess a source file
+src/Queen.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Queen.cpp.i
+.PHONY : src/Queen.cpp.i
+
+src/Queen.s: src/Queen.cpp.s
+
+.PHONY : src/Queen.s
+
+# target to generate assembly for a file
+src/Queen.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Queen.cpp.s
+.PHONY : src/Queen.cpp.s
+
+src/Rook.obj: src/Rook.cpp.obj
+
+.PHONY : src/Rook.obj
+
+# target to build an object file
+src/Rook.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Rook.cpp.obj
+.PHONY : src/Rook.cpp.obj
+
+src/Rook.i: src/Rook.cpp.i
+
+.PHONY : src/Rook.i
+
+# target to preprocess a source file
+src/Rook.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Rook.cpp.i
+.PHONY : src/Rook.cpp.i
+
+src/Rook.s: src/Rook.cpp.s
+
+.PHONY : src/Rook.s
+
+# target to generate assembly for a file
+src/Rook.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Rook.cpp.s
+.PHONY : src/Rook.cpp.s
 
 # Help Target
 help:
@@ -398,39 +560,57 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... echec
+	@echo ... Chess
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Bishop.obj
-	@echo ... Bishop.i
-	@echo ... Bishop.s
-	@echo ... King.obj
-	@echo ... King.i
-	@echo ... King.s
-	@echo ... Knight.obj
-	@echo ... Knight.i
-	@echo ... Knight.s
-	@echo ... Pawn.obj
-	@echo ... Pawn.i
-	@echo ... Pawn.s
-	@echo ... Piece.obj
-	@echo ... Piece.i
-	@echo ... Piece.s
-	@echo ... Player.obj
-	@echo ... Player.i
-	@echo ... Player.s
-	@echo ... Position.obj
-	@echo ... Position.i
-	@echo ... Position.s
-	@echo ... Queen.obj
-	@echo ... Queen.i
-	@echo ... Queen.s
-	@echo ... Rook.obj
-	@echo ... Rook.i
-	@echo ... Rook.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Bishop.obj
+	@echo ... src/Bishop.i
+	@echo ... src/Bishop.s
+	@echo ... src/Board.obj
+	@echo ... src/Board.i
+	@echo ... src/Board.s
+	@echo ... src/Check.obj
+	@echo ... src/Check.i
+	@echo ... src/Check.s
+	@echo ... src/Check_Mate.obj
+	@echo ... src/Check_Mate.i
+	@echo ... src/Check_Mate.s
+	@echo ... src/King.obj
+	@echo ... src/King.i
+	@echo ... src/King.s
+	@echo ... src/Knight.obj
+	@echo ... src/Knight.i
+	@echo ... src/Knight.s
+	@echo ... src/No_Piece.obj
+	@echo ... src/No_Piece.i
+	@echo ... src/No_Piece.s
+	@echo ... src/Obstruction.obj
+	@echo ... src/Obstruction.i
+	@echo ... src/Obstruction.s
+	@echo ... src/Out_of_Board.obj
+	@echo ... src/Out_of_Board.i
+	@echo ... src/Out_of_Board.s
+	@echo ... src/Pawn.obj
+	@echo ... src/Pawn.i
+	@echo ... src/Pawn.s
+	@echo ... src/Piece.obj
+	@echo ... src/Piece.i
+	@echo ... src/Piece.s
+	@echo ... src/Player.obj
+	@echo ... src/Player.i
+	@echo ... src/Player.s
+	@echo ... src/Position.obj
+	@echo ... src/Position.i
+	@echo ... src/Position.s
+	@echo ... src/Queen.obj
+	@echo ... src/Queen.i
+	@echo ... src/Queen.s
+	@echo ... src/Rook.obj
+	@echo ... src/Rook.i
+	@echo ... src/Rook.s
 .PHONY : help
 
 
