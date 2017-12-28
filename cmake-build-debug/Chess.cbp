@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/includes/Board.h">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/includes/King.h">
 			<Option target="Chess"/>
 		</Unit>
@@ -140,6 +143,9 @@
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/src/Check_Mate.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathieu/CLionProjects/Chess/src/King.cpp">

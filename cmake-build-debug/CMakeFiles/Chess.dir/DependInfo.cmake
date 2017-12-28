@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Mathieu/CLionProjects/Chess/src/Board.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/Board.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/Chess/src/Check.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/Check.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/Chess/src/Check_Mate.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/Check_Mate.cpp.obj"
+  "C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/Game.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/Chess/src/King.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/King.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/Chess/src/Knight.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/Knight.cpp.obj"
   "C:/Users/Mathieu/CLionProjects/Chess/src/No_Piece.cpp" "C:/Users/Mathieu/CLionProjects/Chess/cmake-build-debug/CMakeFiles/Chess.dir/src/No_Piece.cpp.obj"

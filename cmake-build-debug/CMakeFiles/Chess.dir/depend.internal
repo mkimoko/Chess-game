@@ -4,6 +4,7 @@
 CMakeFiles/Chess.dir/main.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/Bishop.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Board.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Knight.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Pawn.h
@@ -40,6 +41,19 @@ CMakeFiles/Chess.dir/src/Check.cpp.obj
 CMakeFiles/Chess.dir/src/Check_Mate.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check_Mate.h
  C:/Users/Mathieu/CLionProjects/Chess/src/Check_Mate.cpp
+CMakeFiles/Chess.dir/src/Game.cpp.obj
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Bishop.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Board.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Knight.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Pawn.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Piece.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Player.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Position.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Queen.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/Rook.h
+ C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp
 CMakeFiles/Chess.dir/src/King.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Piece.h

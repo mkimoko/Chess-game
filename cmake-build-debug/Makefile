@@ -257,6 +257,33 @@ src/Check_Mate.cpp.s:
 	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Check_Mate.cpp.s
 .PHONY : src/Check_Mate.cpp.s
 
+src/Game.obj: src/Game.cpp.obj
+
+.PHONY : src/Game.obj
+
+# target to build an object file
+src/Game.cpp.obj:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Game.cpp.obj
+.PHONY : src/Game.cpp.obj
+
+src/Game.i: src/Game.cpp.i
+
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) -f CMakeFiles\Chess.dir\build.make CMakeFiles/Chess.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
 src/King.obj: src/King.cpp.obj
 
 .PHONY : src/King.obj
@@ -578,6 +605,9 @@ help:
 	@echo ... src/Check_Mate.obj
 	@echo ... src/Check_Mate.i
 	@echo ... src/Check_Mate.s
+	@echo ... src/Game.obj
+	@echo ... src/Game.i
+	@echo ... src/Game.s
 	@echo ... src/King.obj
 	@echo ... src/King.i
 	@echo ... src/King.s

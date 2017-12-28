@@ -26,6 +26,10 @@ C:/Users/Mathieu/CLionProjects/Chess/includes/Queen.h
 King.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
 
+C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
+Board.h
+C:/Users/Mathieu/CLionProjects/Chess/includes/Board.h
+
 C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
 Piece.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/Piece.h
@@ -123,6 +127,8 @@ includes/Player.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/Player.h
 includes/Board.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/Board.h
+includes/Game.h
+C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
 
 C:/Users/Mathieu/CLionProjects/Chess/src/Bishop.cpp
 ../includes/Bishop.h
@@ -157,6 +163,12 @@ C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check.h
 C:/Users/Mathieu/CLionProjects/Chess/src/Check_Mate.cpp
 ../includes/exception/Check_Mate.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check_Mate.h
+
+C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp
+limits
+-
+../includes/Game.h
+C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
 
 C:/Users/Mathieu/CLionProjects/Chess/src/King.cpp
 ../includes/King.h

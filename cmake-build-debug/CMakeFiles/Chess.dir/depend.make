@@ -3,6 +3,7 @@
 
 CMakeFiles/Chess.dir/main.cpp.obj: ../includes/Bishop.h
 CMakeFiles/Chess.dir/main.cpp.obj: ../includes/Board.h
+CMakeFiles/Chess.dir/main.cpp.obj: ../includes/Game.h
 CMakeFiles/Chess.dir/main.cpp.obj: ../includes/King.h
 CMakeFiles/Chess.dir/main.cpp.obj: ../includes/Knight.h
 CMakeFiles/Chess.dir/main.cpp.obj: ../includes/Pawn.h
@@ -39,6 +40,19 @@ CMakeFiles/Chess.dir/src/Check.cpp.obj: ../src/Check.cpp
 
 CMakeFiles/Chess.dir/src/Check_Mate.cpp.obj: ../includes/exception/Check_Mate.h
 CMakeFiles/Chess.dir/src/Check_Mate.cpp.obj: ../src/Check_Mate.cpp
+
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Bishop.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Board.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Game.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/King.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Knight.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Pawn.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Piece.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Player.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Position.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Queen.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Rook.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../src/Game.cpp
 
 CMakeFiles/Chess.dir/src/King.cpp.obj: ../includes/King.h
 CMakeFiles/Chess.dir/src/King.cpp.obj: ../includes/Piece.h
