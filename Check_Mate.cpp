@@ -2,7 +2,7 @@
 // Created by Mathieu on 26/12/2017.
 //
 
-#include "Check_Mate.h"
+#include "includes\exception\Check_Mate.h"
 
 Check_Mate::Check_Mate():m_description("Check Mate!") {}
 

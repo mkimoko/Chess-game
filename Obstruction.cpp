@@ -2,7 +2,7 @@
 // Created by Mathieu on 26/12/2017.
 //
 
-#include "Obstruction.h"
+#include "includes\exception\Obstruction.h"
 
 Obstruction::Obstruction():m_description("\nYou can't go there...\n") {}
 

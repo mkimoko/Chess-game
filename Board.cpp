@@ -2,11 +2,11 @@
 // Created by Mathieu on 24/12/2017.
 //
 
-#include "Board.h"
-#include "Pawn.h"
-#include "No_Piece.h"
-#include "Obstruction.h"
-#include "Check.h"
+#include "includes\Board.h"
+#include "includes\Pawn.h"
+#include "includes\exception\No_Piece.h"
+#include "includes\exception\Obstruction.h"
+#include "includes\exception\Check.h"
 #include <iostream>
 #include <string>
 #include <getopt.h>

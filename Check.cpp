@@ -2,7 +2,7 @@
 // Created by Mathieu on 26/12/2017.
 //
 
-#include "Check.h"
+#include "includes/exception/Check.h"
 
 Check::Check():m_description("Check !") {}
 

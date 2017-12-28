@@ -2,8 +2,8 @@
 // Created by Mathieu on 23/12/2017.
 //
 
-#include "King.h"
-#include "Out_of_Board.h"
+#include "includes\King.h"
+#include "includes\exception\Out_of_Board.h"
 
 King::King(Position position)
 {

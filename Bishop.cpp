@@ -1,8 +1,8 @@
 //
 // Created by Mathieu on 18/12/2017.
 //
-#include "Bishop.h"
-#include "Out_of_Board.h"
+#include "includes\Bishop.h"
+#include "includes\exception\Out_of_Board.h"
 #include <cstdlib>
 
 Bishop::Bishop(Position position)

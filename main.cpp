@@ -1,15 +1,15 @@
 #include <iostream>
 #include <map>
-#include "Position.h"
-#include "Piece.h"
-#include "Pawn.h"
-#include "Rook.h"
-#include "Bishop.h"
-#include "Queen.h"
-#include "Knight.h"
-#include "King.h"
-#include "Player.h"
-#include "Board.h"
+#include "includes\Position.h"
+#include "includes\Piece.h"
+#include "includes\Pawn.h"
+#include "includes\Rook.h"
+#include "includes\Bishop.h"
+#include "includes\Queen.h"
+#include "includes\Knight.h"
+#include "includes\King.h"
+#include "includes\Player.h"
+#include "includes\Board.h"
 
 int main() {
 
@@ -47,7 +47,7 @@ int main() {
     }*/
 
     Board board ;
-    //board.printTab();
+    //board.printTab();v
 
     /*board.deplacement(1, Position(2,2), Position(2,3));
 

@@ -2,8 +2,8 @@
 // Created by Mathieu on 18/12/2017.
 //
 
-#include "Pawn.h"
-#include "Out_of_Board.h"
+#include "includes\Pawn.h"
+#include "includes\exception\Out_of_Board.h"
 
 
 Pawn::Pawn(Position position)

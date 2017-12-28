@@ -2,8 +2,8 @@
 // Created by Mathieu on 18/12/2017.
 //
 
-#include "Queen.h"
-#include "Out_of_Board.h"
+#include "includes\Queen.h"
+#include "includes\exception\Out_of_Board.h"
 
 Queen::Queen(Position position):m_bishop(position), m_rook(position)
 {
