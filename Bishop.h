@@ -12,7 +12,7 @@ class Bishop : public Piece {
         Bishop(Position position);
         Bishop(int col, int row);
         int getCode();
-        int deplacement(Position position);
+        int deplacement(Position position, int option);
         int specialMove(Position position);
         int kill(Piece & piece);
 

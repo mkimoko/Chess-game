@@ -13,7 +13,7 @@ class Knight : public Piece {
         int getCode();
         Knight(Position position);
         Knight(int col, int row);
-        int deplacement(Position position);
+        int deplacement(Position position, int option);
         int specialMove(Position position);
         int kill(Piece & piece);
 

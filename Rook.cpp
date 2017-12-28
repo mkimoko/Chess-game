@@ -23,7 +23,7 @@ void Rook::print() {
     std::cout << "r";
 }
 
-int Rook::deplacement(Position position){
+int Rook::deplacement(Position position, int option){
 
     if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
         throw Out_of_Board();

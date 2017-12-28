@@ -20,6 +20,7 @@ class Player {
         Player(int id);
         int getId();
         std::map< Piece *, bool > & getArmy();
+        Piece * getKing();
         Piece * piece(Position position);
         std::vector< Piece * > alive();
         std::vector< Piece * > dead();

@@ -84,6 +84,19 @@ std::map<Piece*,bool>::iterator it;
     throw No_Piece();
 }
 
+Piece *Player::getKing(){
+    std::map<Piece*,bool>::iterator it;
+
+    for(it = m_army.begin(); it!= m_army.end(); it++)
+    {
+        if (it->second == true){
+            if(it->first->getCode() == 6){
+                return (it->first);
+            }
+        }
+    }
+}
+
 
 std::vector< Piece * > Player::alive(){
     std::map<Piece *,bool>::iterator it;

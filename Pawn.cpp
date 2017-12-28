@@ -25,16 +25,28 @@ void Pawn::print() {
     std::cout << "p";
 }
 
-int Pawn::deplacement(Position position){
+int Pawn::deplacement(Position position, int option){
 
+    if (option == 1){
+        if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+            throw Out_of_Board();
+        }
 
-    if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
-        throw Out_of_Board();
+        if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+1 ) {
+            return 1;
+        }
     }
 
-    if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+1 ) {
-        return 1;
+    if (option == 2){
+        if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
+            throw Out_of_Board();
+        }
+
+        if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()-1 ) {
+            return 1;
+        }
     }
+
 
     return 0;
 }
@@ -50,13 +62,13 @@ int Pawn::kill(Piece & piece){
     if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
 
         if( piece.getPosition().getRow() == getPosition().getRow()-1){
-            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            m_nb_moves++;
+            /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+            m_nb_moves++;*/
             return 1;
         }
         if( piece.getPosition().getRow() == getPosition().getRow()+1 ){
-            getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            m_nb_moves++;
+            /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+            m_nb_moves++;*/
             return 1;
         }
     }

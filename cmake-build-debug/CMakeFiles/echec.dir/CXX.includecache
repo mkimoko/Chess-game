@@ -27,9 +27,13 @@ No_Piece.h
 C:/Users/Mathieu/CLionProjects/echec/No_Piece.h
 Obstruction.h
 C:/Users/Mathieu/CLionProjects/echec/Obstruction.h
+Check.h
+C:/Users/Mathieu/CLionProjects/echec/Check.h
 iostream
 -
 string
+-
+getopt.h
 -
 
 C:/Users/Mathieu/CLionProjects/echec/Board.h

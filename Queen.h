@@ -24,7 +24,7 @@ class Queen : public Piece{
         Rook & getRook();
 
         void positionement(Position position);
-        int deplacement(Position position);
+        int deplacement(Position position, int option);
         int specialMove(Position position);
         int kill(Piece & piece);
 };

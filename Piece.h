@@ -19,7 +19,7 @@ class Piece {
         Position & getPosition();
         int getNbMoves();
         void upNbMoves();
-        virtual int deplacement(Position position) = 0;
+        virtual int deplacement(Position position, int option) = 0;
         virtual int specialMove(Position position) = 0;
         virtual int kill(Piece & piece) = 0;
         //Print the piece

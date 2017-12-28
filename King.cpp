@@ -24,7 +24,7 @@ void King::print(){
     std::cout << "K";
 }
 
-int King::deplacement(Position position){
+int King::deplacement(Position position, int option){
 
     if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
         throw Out_of_Board();

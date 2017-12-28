@@ -62,8 +62,10 @@ int main() {
 
     board.deplacement(1, Position(2,2), Position(2,3));
     board.deplacement(1, Position(3,1), Position(2,2));
+    board.deplacement(1, Position(2,1), Position(1,3));
+    board.deplacement(2, Position(1,7), Position(1,6));
 
-    board.deplacement(1, Position(2,2), Position(4,4));
+    /*board.deplacement(1, Position(2,2), Position(4,4));
     board.deplacement(1, Position(2,1), Position(1,3));
     board.deplacement(1, Position(4,1), Position(3,1));
     board.deplacement(1, Position(4,4), Position(2,6));
@@ -72,8 +74,17 @@ int main() {
     board.deplacement(1, Position(4,2), Position(4,3));
     board.deplacement(1, Position(5,1), Position(4,1));
     board.deplacement(1, Position(4,1), Position(4,2));
-    board.deplacement(1, Position(4,2), Position(5,3));
-    board.kill(1, Position(2,6), Position(1,7));
+    board.deplacement(1, Position(4,2), Position(5,3));*/
+    board.kill(1, Position(2,2), Position(7,7));
+    board.deplacement(2, Position(5,7), Position(5,6));
+    board.deplacement(2, Position(5,6), Position(5,5));
+    board.deplacement(1, Position(7,7), Position(6,6));
+    board.deplacement(2, Position(5,8), Position(5,7));
+    //board.kill(1, Position(2,2), Position(7,7));
+    //board.deplacement(2, Position(2,8), Position(1,6));
+    //board.deplacement(2, Position(6,7), Position(6,6));
+    //board.deplacement(2, Position(6,6), Position(6,5));
+    board.threatned(2);
     board.printTab();
 
     /*Piece * p = board.piece(Position(1,2));

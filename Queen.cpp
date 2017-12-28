@@ -37,18 +37,18 @@ void Queen::positionement(Position position) {
     getRook().getPosition().placement(position.getCol(), position.getRow());
 }
 
-int Queen::deplacement(Position position){
+int Queen::deplacement(Position position, int option){
 
     if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
         throw Out_of_Board();
     }
-    if (getRook().deplacement(position) == 1){
+    if (getRook().deplacement(position, option) == 1){
         /*positionement(getRook().getPosition());
         m_nb_moves++;*/
         return 1;
     }
 
-    if (getBishop().deplacement(position) == 1){
+    if (getBishop().deplacement(position, option) == 1){
         /*positionement(getBishop().getPosition());
         m_nb_moves++;*/
         return 1;
@@ -65,13 +65,13 @@ int Queen::kill(Piece & piece){
         throw Out_of_Board();
     }
 
-    if (getRook().deplacement(piece.getPosition()) == 1){
+    if (getRook().deplacement(piece.getPosition(), 0) == 1){
         /*positionement(getRook().getPosition());
         m_nb_moves++;*/
         return 1;
     }
 
-    if (getBishop().deplacement(piece.getPosition()) == 1){
+    if (getBishop().deplacement(piece.getPosition(), 0) == 1){
         /*positionement(getBishop().getPosition());
         m_nb_moves++;*/
         return 1;

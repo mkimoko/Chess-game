@@ -10,6 +10,7 @@ CMakeFiles/echec.dir/Bishop.cpp.obj: ../Position.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../Bishop.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../Board.cpp
 CMakeFiles/echec.dir/Board.cpp.obj: ../Board.h
+CMakeFiles/echec.dir/Board.cpp.obj: ../Check.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../King.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../Knight.h
 CMakeFiles/echec.dir/Board.cpp.obj: ../No_Piece.h

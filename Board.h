@@ -28,14 +28,15 @@ class Board {
         Player & getPlayer2();
         void deplacement(int id,Position start, Position end);
         void kill(int id, Position start, Position end);
-        bool accessibility(Piece * piece, Position p);
+        bool accessibility(Piece * piece, Position p, int option);
+        bool threatned(int id);
     private:
-        bool accessibility(Pawn * pawn, Position p);
-        bool accessibility(Rook *rook, Position p);
-        bool accessibility(Bishop * bishop, Position p);
-        bool accessibility(Knight * knight, Position p);
-        bool accessibility(Queen * queen, Position p);
-        bool accessibility(King * king, Position p);
+        bool accessibility(Pawn * pawn, Position p, int option);
+        bool accessibility(Rook *rook, Position p, int option);
+        bool accessibility(Bishop * bishop, Position p, int option);
+        bool accessibility(Knight * knight, Position p, int option);
+        bool accessibility(Queen * queen, Position p, int option);
+        bool accessibility(King * king, Position p, int option);
 };
 
 
