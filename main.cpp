@@ -73,6 +73,7 @@ int main() {
     board.deplacement(1, Position(5,1), Position(4,1));
     board.deplacement(1, Position(4,1), Position(4,2));
     board.deplacement(1, Position(4,2), Position(5,3));
+    board.kill(1, Position(2,6), Position(1,7));
     board.printTab();
 
     /*Piece * p = board.piece(Position(1,2));

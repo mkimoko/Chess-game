@@ -89,11 +89,26 @@ void Board::deplacement(int id,Position start, Position end){
     Piece * p ;
     try {
 
-        if (id == 1)
+        std::map<Piece *, bool >::iterator it;
+        if (id == 1){
             p = m_p1.piece(start);
+            for (it = m_p1.getArmy().begin(); it != m_p1.getArmy().end(); it++) {
+                if (it->first == p)
+                    if (it->second == false)
+                        throw No_Piece();
+            }
+        }
 
-        if (id == 2)
+
+        if (id == 2){
             p = m_p2.piece(start);
+            for (it = m_p2.getArmy().begin(); it != m_p2.getArmy().end(); it++) {
+                if (it->first == p)
+                    if (it->second == false)
+                        throw No_Piece();
+            }
+        }
+
 
         if (p->deplacement(end) == 1){
             if (accessibility(p, end) == true){
@@ -108,6 +123,58 @@ void Board::deplacement(int id,Position start, Position end){
             }
         }else{
             throw Obstruction();
+        }
+
+    }
+    catch (const std::exception &e){
+        std::cerr << e.what() << std::endl;
+    }
+
+}
+
+void Board::kill(int id, Position start, Position end){
+    Piece *p;
+
+    try {
+        if (id == 1)
+            p = m_p1.piece(start);
+
+        if (id == 2)
+            p = m_p2.piece(start);
+
+        if (p->deplacement(end) == 1){
+
+            if (accessibility(p, end) == true){
+                std::cout<<"bjr";
+                p->getPosition().placement(end.getCol(),end.getRow());
+                if (p->getCode() == 5){
+                    Queen* q = (Queen *) p;
+                    q->positionement(end);
+                }
+
+                std::map<Piece *, bool>::iterator it;
+                if (id == 1){
+                    for(it = m_p2.getArmy().begin(); it != m_p2.getArmy().end(); it++){
+                        if (it->first->getPosition() == end){
+                            it->second = false;
+                        }
+                    }
+                }
+
+                if (id == 2){
+                    for(it = m_p1.getArmy().begin(); it != m_p1.getArmy().end(); it++){
+                        if (it->first->getPosition() == end){
+                            it->second = false;
+                        }
+                    }
+                }
+
+            }
+            else{
+                throw No_Piece();
+            }
+        }else{
+            throw No_Piece();
         }
 
     }

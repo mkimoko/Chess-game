@@ -27,13 +27,12 @@ void Pawn::print() {
 
 int Pawn::deplacement(Position position){
 
+
     if( position.getRow() < 1 || position.getRow() > 8 || position.getCol() < 1 || position.getCol() > 8){
         throw Out_of_Board();
     }
 
     if( position.getCol() == getPosition().getCol() && position.getRow() == getPosition().getRow()+1 ) {
-        /*m_position.placement(position.getCol(), getPosition().getRow());
-        m_nb_moves++;*/
         return 1;
     }
 

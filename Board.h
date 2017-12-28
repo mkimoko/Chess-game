@@ -27,6 +27,7 @@ class Board {
         Player & getPlayer1();
         Player & getPlayer2();
         void deplacement(int id,Position start, Position end);
+        void kill(int id, Position start, Position end);
         bool accessibility(Piece * piece, Position p);
     private:
         bool accessibility(Pawn * pawn, Position p);
