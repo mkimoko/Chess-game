@@ -14,7 +14,7 @@ public:
     Knight(int col, int row);
     int deplacement(Position position, int option);
     int specialMove(Position position);
-    int kill(Piece & piece);
+    int kill(Piece * piece, int option);
 
 private:
     void print();

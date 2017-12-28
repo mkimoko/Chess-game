@@ -167,8 +167,14 @@ C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check_Mate.h
 C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp
 limits
 -
+chrono
+-
+thread
+-
 ../includes/Game.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/Game.h
+../includes/exception/Check_Mate.h
+C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check_Mate.h
 
 C:/Users/Mathieu/CLionProjects/Chess/src/King.cpp
 ../includes/King.h
@@ -231,6 +237,8 @@ utility
 C:/Users/Mathieu/CLionProjects/Chess/src/Position.cpp
 ../includes/Position.h
 C:/Users/Mathieu/CLionProjects/Chess/includes/Position.h
+../includes/exception/Out_of_Board.h
+C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Out_of_Board.h
 
 C:/Users/Mathieu/CLionProjects/Chess/src/Queen.cpp
 ../includes/Queen.h

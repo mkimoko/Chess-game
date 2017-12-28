@@ -24,8 +24,9 @@ public:
     Piece * piece(Position position);
     Player & getPlayer1();
     Player & getPlayer2();
-    void deplacement(int id,Position start, Position end);
-    void kill(int id, Position start, Position end);
+
+    bool deplacement(int id,Position start, Position end);
+    bool kill(int id, Position start, Position end);
     bool accessibility(Piece * piece, Position p, int option);
     bool threatned(int id);
     bool win(int id);

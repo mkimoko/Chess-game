@@ -50,16 +50,16 @@ int Bishop::deplacement(Position position, int option){
 
 
 
-int Bishop::kill(Piece & piece){
+int Bishop::kill(Piece * piece, int option){
 
-    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+    if( piece->getPosition().getRow() < 1 || piece->getPosition().getRow() > 8 || piece->getPosition().getCol() < 1 || piece->getPosition().getCol() > 8){
         throw Out_of_Board();
     }
 
-    if( getPosition().getCol() != piece.getPosition().getCol() || getPosition().getRow() != piece.getPosition().getRow() ){
+    if( getPosition().getCol() != piece->getPosition().getCol() || getPosition().getRow() != piece->getPosition().getRow() ){
 
-        int col_decal = abs(getPosition().getCol()- piece.getPosition().getCol());
-        int row_decal = abs(getPosition().getRow()- piece.getPosition().getRow());
+        int col_decal = abs(getPosition().getCol()- piece->getPosition().getCol());
+        int row_decal = abs(getPosition().getRow()- piece->getPosition().getRow());
 
         if( col_decal == row_decal  ){
 

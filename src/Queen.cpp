@@ -59,19 +59,19 @@ int Queen::deplacement(Position position, int option){
 
 
 
-int Queen::kill(Piece & piece){
+int Queen::kill(Piece * piece, int option){
 
-    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+    if( piece->getPosition().getRow() < 1 || piece->getPosition().getRow() > 8 || piece->getPosition().getCol() < 1 || piece->getPosition().getCol() > 8){
         throw Out_of_Board();
     }
 
-    if (getRook().deplacement(piece.getPosition(), 0) == 1){
+    if (getRook().deplacement(piece->getPosition(), 0) == 1){
         /*positionement(getRook().getPosition());
         m_nb_moves++;*/
         return 1;
     }
 
-    if (getBishop().deplacement(piece.getPosition(), 0) == 1){
+    if (getBishop().deplacement(piece->getPosition(), 0) == 1){
         /*positionement(getBishop().getPosition());
         m_nb_moves++;*/
         return 1;

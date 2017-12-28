@@ -4,7 +4,7 @@
 
 #include "../includes/exception/Check.h"
 
-Check::Check():m_description("Check !") {}
+Check::Check():m_description("Check !\n Save your king !\n") {}
 
 const char* Check::what() const throw(){
     return  m_description;

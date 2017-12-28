@@ -87,7 +87,7 @@ Player & Board::getPlayer2(){
     return m_p2;
 }
 
-void Board::deplacement(int id,Position start, Position end){
+bool Board::deplacement(int id, Position start, Position end){
     Piece * p ;
     try {
 
@@ -119,6 +119,7 @@ void Board::deplacement(int id,Position start, Position end){
                     Queen* q = (Queen *) p;
                     q->positionement(end);
                 }
+                return true;
             }
             else{
                 throw Obstruction();
@@ -131,10 +132,10 @@ void Board::deplacement(int id,Position start, Position end){
     catch (const std::exception &e){
         std::cerr << e.what() << std::endl;
     }
-
+    return false;
 }
 
-void Board::kill(int id, Position start, Position end){
+bool Board::kill(int id, Position start, Position end){
     Piece *p;
 
     try {
@@ -144,9 +145,9 @@ void Board::kill(int id, Position start, Position end){
         if (id == 2)
             p = m_p2.piece(start);
 
-        if (p->deplacement(end, id) == 1){
+        if (p->kill(piece(end), id) == 1){
 
-            if (accessibility(p, end, id) == true){
+            if (accessibility(p, end, id) != true){
                 p->getPosition().placement(end.getCol(),end.getRow());
                 if (p->getCode() == 5){
                     Queen* q = (Queen *) p;
@@ -169,7 +170,7 @@ void Board::kill(int id, Position start, Position end){
                         }
                     }
                 }
-
+                return true;
             }
             else{
                 throw No_Piece();
@@ -182,7 +183,7 @@ void Board::kill(int id, Position start, Position end){
     catch (const std::exception &e){
         std::cerr << e.what() << std::endl;
     }
-
+    return false;
 }
 
 bool Board::accessibility(Piece * piece, Position p, int option){
@@ -357,14 +358,14 @@ bool Board::threatned(int id){
 
     if (id == 1){
         for (it = m_p2.getArmy().begin(); it != m_p2.getArmy().end(); it++ ){
-            if(it->first->kill((Piece &) *m_p1.getKing()) == 1)
+            if(it->first->kill(m_p1.getKing(), 0) == 1)
                 throw Check();
         }
     }
 
     if (id == 2){
         for (it = m_p1.getArmy().begin(); it != m_p1.getArmy().end(); it++ ){
-            if(it->first->kill((Piece &) *m_p2.getKing()) == 1)
+            if(it->first->kill(m_p2.getKing(), 0) == 1)
                 throw Check();
         }
     }

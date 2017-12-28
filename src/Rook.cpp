@@ -44,21 +44,21 @@ int Rook::deplacement(Position position, int option){
 
 
 
-int Rook::kill(Piece & piece){
+int Rook::kill(Piece * piece, int option){
 
-    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+    if( piece->getPosition().getRow() < 1 || piece->getPosition().getRow() > 8 || piece->getPosition().getCol() < 1 || piece->getPosition().getCol() > 8){
         throw Out_of_Board();
     }
 
 
-    if( getPosition().getCol() != piece.getPosition().getCol() || getPosition().getRow() != piece.getPosition().getRow() ){
+    if( getPosition().getCol() != piece->getPosition().getCol() || getPosition().getRow() != piece->getPosition().getRow() ){
 
-        if( piece.getPosition().getCol() == getPosition().getCol() ){
+        if( piece->getPosition().getCol() == getPosition().getCol() ){
             //getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
             return 1;
         }
 
-        if( piece.getPosition().getRow() == getPosition().getRow() ){
+        if( piece->getPosition().getRow() == getPosition().getRow() ){
             //getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
             return 1;
         }

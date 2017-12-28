@@ -53,6 +53,7 @@ CMakeFiles/Chess.dir/src/Game.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/Position.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Queen.h
  C:/Users/Mathieu/CLionProjects/Chess/includes/Rook.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Check_Mate.h
  C:/Users/Mathieu/CLionProjects/Chess/src/Game.cpp
 CMakeFiles/Chess.dir/src/King.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/King.h
@@ -100,6 +101,7 @@ CMakeFiles/Chess.dir/src/Player.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/src/Player.cpp
 CMakeFiles/Chess.dir/src/Position.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/Position.h
+ C:/Users/Mathieu/CLionProjects/Chess/includes/exception/Out_of_Board.h
  C:/Users/Mathieu/CLionProjects/Chess/src/Position.cpp
 CMakeFiles/Chess.dir/src/Queen.cpp.obj
  C:/Users/Mathieu/CLionProjects/Chess/includes/Bishop.h

@@ -3,6 +3,7 @@
 //
 
 #include "../includes/Position.h"
+#include "../includes/exception/Out_of_Board.h"
 
 //Construct
 Position::Position(){
@@ -81,7 +82,12 @@ Position Position::traduction(std::string position){
             std::cout << "Probleme with coordinate" << std::endl;
         }
 
+        if (result.m_col < 1 || result.m_col > 8 || result.m_row < 1 || result.m_row > 8)
+            throw Out_of_Board();
+
     }
+
+
     return result;
 }
 

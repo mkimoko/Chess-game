@@ -45,15 +45,15 @@ int Knight::deplacement(Position position ,int option){
 
 }
 
-int Knight::kill(Piece & piece){
+int Knight::kill(Piece * piece, int option){
 
-    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+    if( piece->getPosition().getRow() < 1 || piece->getPosition().getRow() > 8 || piece->getPosition().getCol() < 1 || piece->getPosition().getCol() > 8){
         throw Out_of_Board();
     }
 
 
-    int col_decal = abs( getPosition().getCol()- piece.getPosition().getCol() );
-    int row_decal = abs( getPosition().getRow()- piece.getPosition().getRow() );
+    int col_decal = abs( getPosition().getCol()- piece->getPosition().getCol() );
+    int row_decal = abs( getPosition().getRow()- piece->getPosition().getRow() );
 
     if ( col_decal == 2 || row_decal == 2){
         if( col_decal == 1 || row_decal == 1 ) {

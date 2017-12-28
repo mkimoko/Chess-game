@@ -53,25 +53,45 @@ int Pawn::deplacement(Position position, int option){
 
 
 
-int Pawn::kill(Piece & piece){
+int Pawn::kill(Piece * piece, int option){
 
-    if( piece.getPosition().getRow() < 1 || piece.getPosition().getRow() > 8 || piece.getPosition().getCol() < 1 || piece.getPosition().getCol() > 8){
+    if( piece->getPosition().getRow() < 1 || piece->getPosition().getRow() > 8 || piece->getPosition().getCol() < 1 || piece->getPosition().getCol() > 8){
         throw Out_of_Board();
     }
 
-    if( piece.getPosition().getCol() == getPosition().getCol()+1 ){
+    if (option == 1){
+        if( piece->getPosition().getCol() == getPosition().getCol()+1 ){
 
-        if( piece.getPosition().getRow() == getPosition().getRow()-1){
-            /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            m_nb_moves++;*/
-            return 1;
-        }
-        if( piece.getPosition().getRow() == getPosition().getRow()+1 ){
-            /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-            m_nb_moves++;*/
-            return 1;
+            if( piece->getPosition().getRow() == getPosition().getRow()-1){
+                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+                m_nb_moves++;*/
+                return 1;
+            }
+            if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
+                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+                m_nb_moves++;*/
+                return 1;
+            }
         }
     }
+
+    if (option == 2){
+        if( piece->getPosition().getCol() == getPosition().getCol()-1 ){
+
+            if( piece->getPosition().getRow() == getPosition().getRow()-1){
+                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+                m_nb_moves++;*/
+                return 1;
+            }
+            if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
+                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
+                m_nb_moves++;*/
+                return 1;
+            }
+        }
+    }
+
+
     return 0;
 }
 

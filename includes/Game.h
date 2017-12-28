@@ -14,7 +14,12 @@ class Game{
         Board m_board;
     public:
         Game();
+        int getTour();
         void print();
         int choice();
+        bool action(int id);
+        Position positionChoice();
+        void play();
+
 };
 #endif //CHESS_GAME_H

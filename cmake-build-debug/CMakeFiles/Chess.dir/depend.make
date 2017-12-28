@@ -52,6 +52,7 @@ CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Player.h
 CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Position.h
 CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Queen.h
 CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/Rook.h
+CMakeFiles/Chess.dir/src/Game.cpp.obj: ../includes/exception/Check_Mate.h
 CMakeFiles/Chess.dir/src/Game.cpp.obj: ../src/Game.cpp
 
 CMakeFiles/Chess.dir/src/King.cpp.obj: ../includes/King.h
@@ -99,6 +100,7 @@ CMakeFiles/Chess.dir/src/Player.cpp.obj: ../includes/exception/Obstruction.h
 CMakeFiles/Chess.dir/src/Player.cpp.obj: ../src/Player.cpp
 
 CMakeFiles/Chess.dir/src/Position.cpp.obj: ../includes/Position.h
+CMakeFiles/Chess.dir/src/Position.cpp.obj: ../includes/exception/Out_of_Board.h
 CMakeFiles/Chess.dir/src/Position.cpp.obj: ../src/Position.cpp
 
 CMakeFiles/Chess.dir/src/Queen.cpp.obj: ../includes/Bishop.h

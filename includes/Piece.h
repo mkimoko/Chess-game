@@ -21,7 +21,7 @@ public:
     void upNbMoves();
     virtual int deplacement(Position position, int option) = 0;
     virtual int specialMove(Position position) = 0;
-    virtual int kill(Piece & piece) = 0;
+    virtual int kill(Piece * piece, int option) = 0;
     //Print the piece
     void operator()();
     bool operator<(Piece * piece);
