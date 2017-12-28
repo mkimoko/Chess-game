@@ -372,3 +372,76 @@ bool Board::threatned(int id){
     return false;
 
 }
+
+bool Board::win(int id) {
+    try {
+        threatned(id);
+    }catch (const std::exception &e){
+
+
+        try {
+            deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow()-1 ) );
+            threatned(id);
+        }catch (const std::exception &e){
+            try {
+
+            }catch (const std::exception &e){
+                deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow()+1 ) );
+                deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow() ) );
+                threatned(id);
+
+                try {
+                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow() ) );
+                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow()+1 ) );
+                    threatned(id);
+
+
+                }catch (const std::exception &e){
+                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow()-1 ) );
+                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow()+1 ) );
+                    threatned(id);
+
+                    try {
+                        deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow()-1 ) );
+                        deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol(),m_p1.getKing()->getPosition().getRow()+1 ) );
+                        threatned(id);
+
+                    }catch (const std::exception &e){
+                        try {
+                            deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol(),m_p1.getKing()->getPosition().getRow()-1 ) );
+                            deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow()+1 ) );
+                            threatned(id);
+
+
+                        }catch (const std::exception &e){
+                            deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow()-1 ) );
+                            deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow() ) );
+                            threatned(id);
+
+                            try {
+                                deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow() ) );
+                                deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()+1,m_p1.getKing()->getPosition().getRow()-1 ) );
+                                threatned(id);
+
+
+                            }catch (const std::exception &e){
+                                try {
+                                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol()-1,m_p1.getKing()->getPosition().getRow()+1 ) );
+                                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol(),m_p1.getKing()->getPosition().getRow()-1 ) );
+                                    threatned(id);
+
+                                    deplacement(id, m_p1.getKing()->getPosition(), Position(m_p1.getKing()->getPosition().getCol(),m_p1.getKing()->getPosition().getRow()+1 ) );
+                                }catch (const std::exception &e){
+                                    return true;
+                                }
+
+
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+    }
+    return false;
+}

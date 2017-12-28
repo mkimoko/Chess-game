@@ -171,6 +171,8 @@ map
 -
 Piece.h
 C:/Users/Mathieu/CLionProjects/echec/Piece.h
+King.h
+C:/Users/Mathieu/CLionProjects/echec/King.h
 
 C:/Users/Mathieu/CLionProjects/echec/Position.cpp
 Position.h

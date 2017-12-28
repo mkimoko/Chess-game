@@ -30,6 +30,7 @@ class Board {
         void kill(int id, Position start, Position end);
         bool accessibility(Piece * piece, Position p, int option);
         bool threatned(int id);
+        bool win(int id);
     private:
         bool accessibility(Pawn * pawn, Position p, int option);
         bool accessibility(Rook *rook, Position p, int option);

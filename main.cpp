@@ -80,11 +80,14 @@ int main() {
     board.deplacement(2, Position(5,6), Position(5,5));
     board.deplacement(1, Position(7,7), Position(6,6));
     board.deplacement(2, Position(5,8), Position(5,7));
-    //board.kill(1, Position(2,2), Position(7,7));
+    board.kill(1, Position(6,6), Position(5,5));
+    board.deplacement(2, Position(5,7), Position(5,8));
+    //board.deplacement(1, Position(5,5), Position(4,6));
+
     //board.deplacement(2, Position(2,8), Position(1,6));
     //board.deplacement(2, Position(6,7), Position(6,6));
     //board.deplacement(2, Position(6,6), Position(6,5));
-    board.threatned(2);
+    board.win(2);
     board.printTab();
 
     /*Piece * p = board.piece(Position(1,2));

@@ -9,6 +9,7 @@
 #include <vector>
 #include <map>
 #include "Piece.h"
+#include "King.h"
 
 class Player {
 
@@ -20,7 +21,7 @@ class Player {
         Player(int id);
         int getId();
         std::map< Piece *, bool > & getArmy();
-        Piece * getKing();
+        King * getKing();
         Piece * piece(Position position);
         std::vector< Piece * > alive();
         std::vector< Piece * > dead();
