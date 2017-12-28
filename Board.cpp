@@ -98,6 +98,10 @@ void Board::deplacement(int id,Position start, Position end){
         if (p->deplacement(end) == 1){
             if (accessibility(p, end) == true){
                 p->getPosition().placement(end.getCol(),end.getRow());
+                if (p->getCode() == 5){
+                    Queen* q = (Queen *) p;
+                    q->positionement(end);
+                }
             }
             else{
                 throw Obstruction();
@@ -131,6 +135,14 @@ bool Board::accessibility(Piece * piece, Position p){
 
     if (piece->getCode() == 4){
         return accessibility((Knight *) piece, p);
+    }
+
+    if (piece->getCode() == 5){
+        return accessibility((Queen *) piece, p);
+    }
+
+    if (piece->getCode() == 6){
+        return accessibility((King *) piece, p);
     }
 }
 
@@ -188,7 +200,6 @@ bool Board::accessibility(Bishop * bishop, Position p){
 
                     }
                     //std::cout<<"new tour +1+1";
-                    Position(p.getCol()-1, p.getRow()-1)();
                     return accessibility(bishop, Position(p.getCol()-1, p.getRow()-1));
                 }
 
@@ -218,7 +229,6 @@ bool Board::accessibility(Bishop * bishop, Position p){
                 if (bishop->getPosition().getRow() > p.getRow()){
                     if (bishop->getPosition().getCol()-1 == p.getCol()){
                         if (bishop->getPosition().getRow()-1 == p.getRow()){
-                            std::cout<<"-1-1";
                             return true;
                         }
                     }
@@ -240,6 +250,36 @@ bool Board::accessibility(Knight * knight, Position p){
         }
 
     }
-    std::cout << "bijour";
+    return false;
+}
+
+bool Board::accessibility(Queen * queen, Position p){
+    if(queen->deplacement(p) == 1){
+        try {
+            piece(p);
+        }catch (const std::exception &e){
+
+            if (accessibility(& queen->getBishop(),p) == true){
+                return accessibility(& queen->getBishop(),p);
+            }
+
+
+            if (accessibility(& queen->getRook(),p) == true){
+                return accessibility(& queen->getRook(),p);
+            }
+
+        }
+    }
+    return false;
+}
+
+bool Board::accessibility(King * king, Position p){
+    if (king->deplacement(p) == 1){
+        try {
+            piece(p);
+        }catch (const std::exception &e){
+            return true;
+        }
+    }
     return false;
 }
