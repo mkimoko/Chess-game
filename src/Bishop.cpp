@@ -38,8 +38,6 @@ int Bishop::deplacement(Position position, int option){
 
         if( col_decal == row_decal ){
 
-            /*m_position.placement(position.getCol(), position.getRow());
-            m_nb_moves++;*/
             return 1;
         }
     }
@@ -63,7 +61,6 @@ int Bishop::kill(Piece * piece, int option){
 
         if( col_decal == row_decal  ){
 
-            //getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
             return 1;
         }
 

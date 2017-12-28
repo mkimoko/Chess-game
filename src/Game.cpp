@@ -19,9 +19,6 @@ void Game::print() {
 
 }
 
-int Game::getTour(){
-    return m_tour;
-}
 
 int Game::choice() {
 
@@ -64,7 +61,6 @@ bool Game::action(int id) {
                     var = m_board.deplacement(id,pstart, pend );
 
                 }catch (const std::exception &e){
-                    std::cout<<"yo";
                     return false;
 
                 }

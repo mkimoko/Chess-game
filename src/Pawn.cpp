@@ -63,13 +63,9 @@ int Pawn::kill(Piece * piece, int option){
         if( piece->getPosition().getCol() == getPosition().getCol()+1 ){
 
             if( piece->getPosition().getRow() == getPosition().getRow()-1){
-                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-                m_nb_moves++;*/
                 return 1;
             }
             if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
-                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-                m_nb_moves++;*/
                 return 1;
             }
         }
@@ -79,13 +75,9 @@ int Pawn::kill(Piece * piece, int option){
         if( piece->getPosition().getCol() == getPosition().getCol()-1 ){
 
             if( piece->getPosition().getRow() == getPosition().getRow()-1){
-                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-                m_nb_moves++;*/
                 return 1;
             }
             if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
-                /*getPosition().placement(piece.getPosition().getCol(), piece.getPosition().getRow() );
-                m_nb_moves++;*/
                 return 1;
             }
         }

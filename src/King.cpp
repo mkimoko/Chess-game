@@ -39,15 +39,10 @@ int King::deplacement(Position position, int option){
             switch (row_decal){
                 case 0:
 
-                    /*m_position.placement(position.getCol(), position.getRow());
-                    m_nb_moves++;*/
-
                     return 1;
 
 
                 case 1:
-                    /*m_position.placement(position.getCol(), position.getRow());
-                    m_nb_moves++;*/
 
                     return 1;
             }
@@ -56,9 +51,6 @@ int King::deplacement(Position position, int option){
         case 0:
             switch (row_decal){
                 case 1:
-                    /*m_position.placement(position.getCol(), position.getRow());
-                    m_nb_moves++;*/
-
                     return 1;
             }
             break;
@@ -84,8 +76,6 @@ int King::kill(Piece * piece, int option){
     if ( col_decal == 2 || row_decal == 2){
         if( col_decal == 1 || row_decal == 1 ) {
 
-            /*m_position.placement(piece.getPosition().getCol(), piece.getPosition().getRow());
-            m_nb_moves++;*/
 
             return 1;
         }

@@ -146,8 +146,7 @@ bool Board::kill(int id, Position start, Position end){
             p = m_p2.piece(start);
 
         if (p->kill(piece(end), id) == 1){
-
-            if (accessibility(p, end, id) != true){
+            if (accessibility(p, end, id) == false){
                 p->getPosition().placement(end.getCol(),end.getRow());
                 if (p->getCode() == 5){
                     Queen* q = (Queen *) p;
@@ -188,17 +187,14 @@ bool Board::kill(int id, Position start, Position end){
 
 bool Board::accessibility(Piece * piece, Position p, int option){
     if (piece->getCode() == 1){
-        //std::cout << "Piece";
         return accessibility( (Pawn *)piece, p, option);
     }
 
     if (piece->getCode() == 2){
-        //std::cout << "Piece";
         return accessibility( (Rook *)piece, p, option);
     }
 
     if (piece->getCode() == 3){
-        //std::cout << "Piece";
         return accessibility( (Bishop *)piece, p, option);
     }
 
@@ -217,12 +213,11 @@ bool Board::accessibility(Piece * piece, Position p, int option){
 
 bool Board::accessibility(Pawn * pawn, Position p, int option){
     if (pawn->deplacement(p, option) == 1){
-        //std::cout << "Pion";
         try {
-            piece(p); /*Regarde si il n'y  a pas de piece*/
+            piece(p); /*Check if there is a piece at this position*/
         }
         catch (const std::exception &e){
-            return true;
+            /*if not */return true;
         }
     }
     return false;

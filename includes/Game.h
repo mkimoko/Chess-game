@@ -14,11 +14,10 @@ class Game{
         Board m_board;
     public:
         Game();
-        int getTour();
-        void print();
-        int choice();
-        bool action(int id);
-        Position positionChoice();
+        void print();//print the board
+        int choice();//return an game option
+        bool action(int id);//do one play
+        Position positionChoice();//choose a position in the board
         void play();
 
 };

@@ -21,10 +21,10 @@ public:
     int getId();
     std::map< Piece *, bool > & getArmy();
     King * getKing();
-    Piece * piece(Position position);
+    Piece * piece(Position position);//return the player's piece if it exist
     std::vector< Piece * > alive();
     std::vector< Piece * > dead();
-    std::vector<Piece *> classement()const;
+    std::vector<Piece *> classement()const;//class piece with the number of times the player use them
 
 
 

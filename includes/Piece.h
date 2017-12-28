@@ -18,7 +18,7 @@ public:
     virtual int getCode() =0;
     Position & getPosition();
     int getNbMoves();
-    void upNbMoves();
+    void upNbMoves();//number of moves of a piece
     virtual int deplacement(Position position, int option) = 0;
     virtual int specialMove(Position position) = 0;
     virtual int kill(Piece * piece, int option) = 0;
