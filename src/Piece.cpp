@@ -2,7 +2,7 @@
 // Created by Mathieu on 28/12/2017.
 //
 
-#include "..\includes\Piece.h"
+#include "../includes/Piece.h"
 
 
 

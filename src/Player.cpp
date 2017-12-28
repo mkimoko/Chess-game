@@ -2,15 +2,15 @@
 // Created by Mathieu on 28/12/2017.
 //
 
-#include "..\includes\Player.h"
-#include "..\includes\Pawn.h"
-#include "..\includes\Rook.h"
-#include "..\includes\Knight.h"
-#include "..\includes\Bishop.h"
-#include "..\includes\Queen.h"
-#include "..\includes\King.h"
-#include "..\includes\exception\No_Piece.h"
-#include "..\includes\exception\Obstruction.h"
+#include "../includes/Player.h"
+#include "../includes/Pawn.h"
+#include "../includes/Rook.h"
+#include "../includes/Knight.h"
+#include "../includes/Bishop.h"
+#include "../includes/Queen.h"
+#include "../includes/King.h"
+#include "../includes/exception/No_Piece.h"
+#include "../includes/exception/Obstruction.h"
 #include <algorithm>
 #include <utility>
 

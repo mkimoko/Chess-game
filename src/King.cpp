@@ -3,8 +3,8 @@
 //
 
 
-#include "../includes\King.h"
-#include "../includes\exception\Out_of_Board.h"
+#include "../includes/King.h"
+#include "../includes/exception/Out_of_Board.h"
 
 King::King(Position position)
 {

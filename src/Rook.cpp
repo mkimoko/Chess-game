@@ -2,8 +2,8 @@
 // Created by Mathieu on 28/12/2017.
 //
 
-#include "../includes\Rook.h"
-#include "../includes\exception\Out_of_Board.h"
+#include "../includes/Rook.h"
+#include "../includes/exception/Out_of_Board.h"
 
 Rook::Rook(Position position)
 {

@@ -2,8 +2,8 @@
 // Created by Mathieu on 28/12/2017.
 //
 
-#include "../includes\Knight.h"
-#include "../includes\exception\Out_of_Board.h"
+#include "../includes/Knight.h"
+#include "../includes/exception/Out_of_Board.h"
 
 Knight::Knight(Position position)
 {
