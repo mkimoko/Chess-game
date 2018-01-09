@@ -134,11 +134,15 @@ std::vector<Piece *> Player::classement()const{
         result.push_back(it->first);
     }
 
-    std::sort(result.begin(), result.end());
+        std::sort(result.begin(), result.end());
 
     for (int i = 0; i < result.size() ; i++) {
+        std::cout << i<< ". ";
         result.at(i)->operator()();
+        std::cout << result.at(i)->getNbMoves();
+        std::cout << " move(s)\n";
     }
     return result;
 }
+
 

@@ -30,11 +30,18 @@ int Rook::deplacement(Position position, int option){
     }
 
 
-    if (getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow()){
-        if( position.getCol() == getPosition().getCol() || position.getRow() == getPosition().getRow() ) {
+    if( getPosition().getCol() != position.getCol() || getPosition().getRow() != position.getRow() ){
+
+        if( position.getCol() == getPosition().getCol() ){
             return 1;
         }
+
+        if( position.getRow() == getPosition().getRow() ){
+            return 1;
+        }
+
     }
+
     return 0;
 
 }

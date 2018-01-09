@@ -28,6 +28,7 @@ public:
     bool deplacement(int id,Position start, Position end);
     bool kill(int id, Position start, Position end);
     bool accessibility(Piece * piece, Position p, int option);//return a value which say if the piece can go to a position
+    bool killability(Pawn * pawn, Position p, int option);
     bool threatned(int id);//true if king is in a check
     bool win(int id);//true if check mate
 private:

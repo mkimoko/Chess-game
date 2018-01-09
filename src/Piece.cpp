@@ -11,7 +11,7 @@ Position & Piece::getPosition() {
 }
 
 
-int Piece::getNbMoves(){
+int & Piece::getNbMoves(){
     return m_nb_moves;
 }
 

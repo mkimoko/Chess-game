@@ -90,11 +90,13 @@ bool Game::action(int id) {
         if (choix == 3){
             if (id == 1){
                 std::cout << "Player 2 win! Check Mate ! \n";
+                m_board.getPlayer2().classement();
                 throw Check_Mate();
             }
 
             if (id == 2){
                 std::cout << "Player 1 win! Check Mate ! \n";
+                m_board.getPlayer1().classement();
                 throw Check_Mate();
             }
         }

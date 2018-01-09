@@ -25,6 +25,7 @@ public:
     std::vector< Piece * > alive();
     std::vector< Piece * > dead();
     std::vector<Piece *> classement()const;//class piece with the number of times the player use them
+    bool operator()(int i, Piece * p);
 
 
 

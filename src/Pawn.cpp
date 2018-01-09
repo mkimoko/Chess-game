@@ -59,30 +59,31 @@ int Pawn::kill(Piece * piece, int option){
         throw Out_of_Board();
     }
 
-    if (option == 1){
-        if( piece->getPosition().getCol() == getPosition().getCol()+1 ){
 
-            if( piece->getPosition().getRow() == getPosition().getRow()-1){
+
+    if (option == 1){
+        if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
+
+            if( piece->getPosition().getCol() == getPosition().getCol()-1){
                 return 1;
             }
-            if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
+            if( piece->getPosition().getCol() == getPosition().getCol()+1 ){
                 return 1;
             }
         }
     }
 
     if (option == 2){
-        if( piece->getPosition().getCol() == getPosition().getCol()-1 ){
+        if( piece->getPosition().getRow() == getPosition().getRow()-1 ){
 
-            if( piece->getPosition().getRow() == getPosition().getRow()-1){
+            if( piece->getPosition().getCol() == getPosition().getCol()-1){
                 return 1;
             }
-            if( piece->getPosition().getRow() == getPosition().getRow()+1 ){
+            if( piece->getPosition().getCol() == getPosition().getCol()+1 ){
                 return 1;
             }
         }
     }
-
 
     return 0;
 }

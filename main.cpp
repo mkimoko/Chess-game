@@ -15,8 +15,6 @@
 int main() {
 
     Game game = Game();
-    //game.choice();
-    //game.positionChoice();
     game.play();
     return 0;
 }

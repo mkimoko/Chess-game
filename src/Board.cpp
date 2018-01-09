@@ -119,6 +119,7 @@ bool Board::deplacement(int id, Position start, Position end){
                     Queen* q = (Queen *) p;
                     q->positionement(end);
                 }
+                p->upNbMoves();
                 return true;
             }
             else{
@@ -137,20 +138,53 @@ bool Board::deplacement(int id, Position start, Position end){
 
 bool Board::kill(int id, Position start, Position end){
     Piece *p;
+    Piece *p2;
 
     try {
-        if (id == 1)
+        if (id == 1){
             p = m_p1.piece(start);
+            p2 = m_p2.piece(end);
+        }
 
-        if (id == 2)
+
+        if (id == 2){
             p = m_p2.piece(start);
+            p2 = m_p1.piece(end);
+        }
 
-        if (p->kill(piece(end), id) == 1){
-            if (accessibility(p, end, id) == false){
+
+        if (p->kill( p2,id) == 1){
+
+            if (p->getCode() == 1){
                 p->getPosition().placement(end.getCol(),end.getRow());
+                p->upNbMoves();
+                std::map<Piece *, bool>::iterator it;
+                if (id == 1){
+                    for(it = m_p2.getArmy().begin(); it != m_p2.getArmy().end(); it++){
+                        if (it->first->getPosition() == end){
+                            it->second = false;
+                        }
+                    }
+                }
+
+                if (id == 2){
+                    for(it = m_p1.getArmy().begin(); it != m_p1.getArmy().end(); it++){
+                        if (it->first->getPosition() == end){
+                            it->second = false;
+                        }
+                    }
+                }
+                return true;
+            }
+
+
+            else if (accessibility(p, end, id) == true){
+                p->getPosition().placement(end.getCol(),end.getRow());
+                p->upNbMoves();
                 if (p->getCode() == 5){
                     Queen* q = (Queen *) p;
                     q->positionement(end);
+                    p->upNbMoves();
                 }
 
                 std::map<Piece *, bool>::iterator it;
@@ -223,6 +257,19 @@ bool Board::accessibility(Pawn * pawn, Position p, int option){
     return false;
 }
 
+bool Board::killability(Pawn * pawn, Position p, int option){
+    if (pawn->kill(piece(p), option) == 1){
+        try {
+            piece(p); /*Check if there is a piece at this position*/
+        }
+        catch (const std::exception &e){
+            /*if not */return false;
+        }
+    }
+    return true;
+
+}
+
 bool Board::accessibility(Rook *rook, Position p, int option){
     if (rook->deplacement(p,option) == 1){
         try {
@@ -231,18 +278,18 @@ bool Board::accessibility(Rook *rook, Position p, int option){
 
             if (rook->getPosition().getCol()+1 == p.getCol() || rook->getPosition().getCol()-1 == p.getCol())
                 return true;
-            if (rook->getPosition().getRow()+1 == p.getRow() || rook->getPosition().getRow()-1 == p.getCol())
+            if (rook->getPosition().getRow()+1 == p.getRow() || rook->getPosition().getRow()-1 == p.getRow())
                 return true;
 
             if (rook->getPosition().getCol() < p.getCol())
-                return accessibility(rook, Position (p.getCol()+1, p.getRow()), option);
-            if (rook->getPosition().getCol() > p.getCol())
                 return accessibility(rook, Position (p.getCol()-1, p.getRow()), option);
+            if (rook->getPosition().getCol() > p.getCol())
+                return accessibility(rook, Position (p.getCol()+1, p.getRow()), option);
 
             if (rook->getPosition().getRow() < p.getRow())
-                return accessibility(rook, Position (p.getCol(), p.getRow()+1), option);
-            if (rook->getPosition().getCol() > p.getCol())
                 return accessibility(rook, Position (p.getCol(), p.getRow()-1), option);
+            if (rook->getPosition().getCol() > p.getCol())
+                return accessibility(rook, Position (p.getCol(), p.getRow()+1), option);
         }
 
     }
@@ -256,19 +303,23 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
         }catch (const std::exception &e){
 
             if (bishop->getPosition().getCol() < p.getCol()){
+                std::cout << "here 1";
                 if (bishop->getPosition().getRow() < p.getRow()){
+                    std::cout << "here 2";
                     if (bishop->getPosition().getCol()+1 == p.getCol()){
+                        std::cout << "here 3";
                         if (bishop->getPosition().getRow()+1 == p.getRow()){
                             return true;
                         }
 
                     }
-                    //std::cout<<"new tour +1+1";
                     return accessibility(bishop, Position(p.getCol()-1, p.getRow()-1), option);
                 }
 
                 if (bishop->getPosition().getRow() > p.getRow()){
+                    std::cout << "here 4";
                     if (bishop->getPosition().getCol()+1 == p.getCol()){
+                        std::cout << "here 5";
                         if (bishop->getPosition().getRow()-1 == p.getRow()){
                             return true;
                         }
@@ -280,8 +331,11 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
             }
 
             if (bishop->getPosition().getCol() > p.getCol()){
+                std::cout << "here 6";
                 if (bishop->getPosition().getRow() < p.getRow()){
+                    std::cout << "here 7";
                     if (bishop->getPosition().getCol()-1 == p.getCol()){
+                        std::cout << "here 8";
                         if (bishop->getPosition().getRow()+1 == p.getRow()){
                             return true;
                         }
@@ -291,7 +345,9 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
                 }
 
                 if (bishop->getPosition().getRow() > p.getRow()){
+                    std::cout << "here 9";
                     if (bishop->getPosition().getCol()-1 == p.getCol()){
+                        std::cout << "here 10";
                         if (bishop->getPosition().getRow()-1 == p.getRow()){
                             return true;
                         }
