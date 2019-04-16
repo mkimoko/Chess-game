@@ -25,9 +25,6 @@ int Game::choice() {
     int choice = 0;
     std::cout << "What do you want to do ? \nPress the option of the action you want to do.\n\n";
     std::cout << "1: Move a piece\n\n2: Move a piece and kill another piece\n\n3: Give up\n\n";
-    std::cout << "ORA MUDA ORA MUDA !!! \n";
-    std::cout << "KU KU KU !!! \nzzzzzzzzzzzzzz
-              sqqcqqsmqsqmdmq
 
     std::cin >> choice;
     std::cin.clear();
