@@ -25,6 +25,7 @@ int Game::choice() {
     int choice = 0;
     std::cout << "What do you want to do ? \nPress the option of the action you want to do.\n\n";
     std::cout << "1: Move a piece\n\n2: Move a piece and kill another piece\n\n3: Give up\n\n";
+    std::cout << "MUDA MUDA MUDA !!! \n";
 
     std::cin >> choice;
     std::cin.clear();
@@ -152,12 +153,12 @@ void Game::play() {
     while(party_over == false) {
         if (m_tour % 2 == 1) {
             id = 1;
-            std::cout << "Player 1 turn \n";
+            std::cout << "\nPlayer 1 turn \n\n";
         }
 
         if (m_tour % 2 == 0) {
             id = 2;
-            std::cout << "Player 2 turn \n";
+            std::cout << "\nPlayer 2 turn \n\n";
         }
 
         try {

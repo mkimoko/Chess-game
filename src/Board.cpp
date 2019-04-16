@@ -303,11 +303,8 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
         }catch (const std::exception &e){
 
             if (bishop->getPosition().getCol() < p.getCol()){
-                std::cout << "here 1";
                 if (bishop->getPosition().getRow() < p.getRow()){
-                    std::cout << "here 2";
                     if (bishop->getPosition().getCol()+1 == p.getCol()){
-                        std::cout << "here 3";
                         if (bishop->getPosition().getRow()+1 == p.getRow()){
                             return true;
                         }
@@ -317,9 +314,7 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
                 }
 
                 if (bishop->getPosition().getRow() > p.getRow()){
-                    std::cout << "here 4";
                     if (bishop->getPosition().getCol()+1 == p.getCol()){
-                        std::cout << "here 5";
                         if (bishop->getPosition().getRow()-1 == p.getRow()){
                             return true;
                         }
@@ -331,11 +326,8 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
             }
 
             if (bishop->getPosition().getCol() > p.getCol()){
-                std::cout << "here 6";
                 if (bishop->getPosition().getRow() < p.getRow()){
-                    std::cout << "here 7";
                     if (bishop->getPosition().getCol()-1 == p.getCol()){
-                        std::cout << "here 8";
                         if (bishop->getPosition().getRow()+1 == p.getRow()){
                             return true;
                         }
@@ -345,9 +337,7 @@ bool Board::accessibility(Bishop * bishop, Position p, int option){
                 }
 
                 if (bishop->getPosition().getRow() > p.getRow()){
-                    std::cout << "here 9";
                     if (bishop->getPosition().getCol()-1 == p.getCol()){
-                        std::cout << "here 10";
                         if (bishop->getPosition().getRow()-1 == p.getRow()){
                             return true;
                         }
